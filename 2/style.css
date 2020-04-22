@@ -1,9 +1,30 @@
-* {background-color:#990909;  position: fixed;  }
+body {background-color:#990909;    }
 
 /* Header */
-.header {width: 100%; height: 215px;}
-.link {padding-left: 35%; padding-right: 35%;}
+.header {width: 100%; height: 60px;}
+.link {padding-left: 35%; padding-right: 35%; }
 /* Mein */
-.main_conteyner {background-color: black;width: 100%;height: 200px;margin-top: 50px;  } 
-.img001 {width: 200px; height: 140px; margin: 25px;  }
-.home, .about .services {display: inline;}
+.main {background-color: black;width: 100%;height: 200px;  } 
+.img001 {width: 200px; height: 140px; justify-content: center;}
+.li { width: 25%; height: 200px; display: inline; float: left; text-align: center;  }
+.text_menu {color: white; font-size: 18px; margin: 3px;}
+/* Central Block */
+.text {color: white;font-size: 18px; }
+.text_block {width: 58%; }
+aside {width: 25%; background-color: #7d0909; margin-top: 3px; display: block;}
+article {display: flex;}
+.aside { background-color: #e3dddd; width: 20%; margin-top: 3px; }
+.li_2 { color: #e95b11; margin-top: 10px; list-style-type: none;}
+.li_3 {list-style-type: none; margin-top: 30px;}
+.lin {text-align: center;}
+
+.aside_link { color: #e95b11;}
+.title_aside {background-color: #bdbdbd; width: 100%; text-align: center; }    
+  
+
+
+/* Footer */
+.footer {width: 99%; height: 35px; background-color: #e95b11; margin-top: 50px;}
+.text_footer { color: white ; text-align: center; font-size: 20px; }
+
+

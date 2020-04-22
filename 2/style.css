@@ -1,0 +1,9 @@
+* {background-color:#990909;  position: fixed;  }
+
+/* Header */
+.header {width: 100%; height: 215px;}
+.link {padding-left: 35%; padding-right: 35%;}
+/* Mein */
+.main_conteyner {background-color: black;width: 100%;height: 200px;margin-top: 50px;  } 
+.img001 {width: 200px; height: 140px; margin: 25px;  }
+.home, .about .services {display: inline;}

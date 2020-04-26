@@ -1,11 +1,77 @@
 body {
-    background-color: ##ffffff;
-    width: 1200px;
-    height: 289px ;
+    background-color: #ffffff;
     
+    height: 289px ;
+    margin: 0px;
+    padding: 0px;  
+}
+.block_icon {
+  height: 63px;
+  width: 63px;
+  background-color: #1275b9;
+  border-radius: 50%;
+  margin: auto;
+
+  
+}
+.block_icon svg {
+    margin: 17px auto auto;
 }
 
+
+.block li {
+text-align: center;
+list-style: none;
+margin: auto;
+}
+.block ul{
+    display: flex;
+    padding: 0px;
+    margin-top: 56px;
+}
+.block_icon:hover {
+    background-color: white;
+   stroke: #1275b9;
+   border: 1px solid #1275b9 ;
+}
+.block_icon:hover {
+   stroke: #1275b9;
+   
+   
+}
 .block{
-    width: 90px;}
-.body_block { 
-    display: flex;}
+    height: 289px;
+    width: 1wh;
+    border: 1px solid silver;
+    margin-top: 70px;
+}
+a {
+    text-decoration: none;
+}
+p {
+    width: 220px;
+    height: 52px;
+    font-family: ProximaNova;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 0.35px;
+    text-align: center;
+    color: #9d9d9d;
+  }
+  
+  H3 {
+   
+    
+    
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    text-align: center;
+    color: #000000;
+  }
+  
+

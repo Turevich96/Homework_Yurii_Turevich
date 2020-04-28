@@ -1,3 +1,4 @@
+
 .block_1_text{
     list-style: none;
    margin: 0px;
@@ -80,7 +81,8 @@
 }
 .box li {
     list-style: none;
-    width: 100%;
+   width: 100%;
+   
     
 }
 .text1{
@@ -126,9 +128,31 @@ svg{
 .img{
     height: 180px;
 }
-.box:hover{
+.box:hover {
     background-color: #0ec8cb;
     color: white;
-    stroke: white;
+    
+    
 
+}
+.box:hover  .text2 {
+    color: white;
+}
+.box:hover  .text1 {
+    color: white;
+}
+.box:hover  svg path {
+    fill: white;
+}
+li .text2{
+    width: 80%;
+    margin: auto;
+}
+.pp{
+    width: 80%;
+    margin: auto;
+}
+svg{
+    height: 65px;
+    width: 65px;
 }

@@ -1,0 +1,153 @@
+body{
+    
+    height: 100%;
+    background-color: #3399cc;
+    
+    
+    
+}
+*{
+    transition: all .1s ease-in;}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.title_h2{
+color: white;
+width: 69%;
+
+}
+.point{
+    width: 70%;
+    height: 500px;
+    border: 3px white solid;
+    
+    box-sizing: border-box;
+    
+
+}
+.box{
+    
+    border: 3px white solid;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    
+    
+}
+.city {
+    height: 125px;
+    width: 25%;
+    display: inline-block; 
+    color: white;
+    
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.point ul{
+    width: 100%;
+    height: 101%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0;
+}
+#i1, #i9{
+    width: 50%;
+    height: 25%;
+   
+}
+.i11{
+    width: 100%;
+     white solid;
+}
+.i2{
+    background-color: #33cccc;
+}
+.i3{
+    background-color: #996699;
+}
+.i4{
+    background-color: #c24747;
+}
+.i5{
+    background-color: #e2674a;
+}
+.i6{
+    background-color: #ffcc66;
+}
+.i7{
+    background-color: #99cc99;
+}
+.i8{
+    background-color: #669999;
+}
+.i9{
+    background-color: #cc6699;
+}
+.i10{
+    background-color: #339966;
+}
+.i11{
+    background-color: #666699;
+    height: 24%;
+}
+.width_box_point{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.footer h6{
+    float: left;
+    
+ }
+ .point:hover .city:not(:hover) {
+    opacity: 50%;}
+
+
+
+
+
+
+.footer h6{
+    color: white;
+    
+    font-size: 17px;
+    font-weight: 500;
+}
+.box p{
+    color: white;
+    
+    font-size: 27px;
+    text-align: center;
+    margin: 0px;
+    box-sizing: border-box;
+    
+    
+}
+.ekran {
+    
+}
+html{
+    border: 17px #2b81ac solid;
+    box-sizing: border-box;
+    height: 100%;
+}
+.box  p{
+    
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.box_temp{
+    opacity: 50%;
+}
+.footer_title{
+    width: 70%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}

@@ -5,67 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Погода</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css">
+
 </head>
 
 <body>
-    <div class="ekran">
-        <ul>
-
-            <li class="element_1">
+    <div class="section">
+        <div class="title">
+            <div class="title_h2">
                 <h2> CSS Weather Forecast</h2>
-            </li>
-            <li class="element_2">
-                <div class="p1">
+            </div>
+        </div>
 
-                    <div class="point">
-                        <ul>
-                            <li class="city" id="i1">
-                                <div class="box">
-                                    wq<p>Paris</p>
-                                </div>
-                            </li>
-                            <li class="city" id="i2">
-                                <div class="box">Paris</div>
-                            </li>
-                            <li class="city" id="i3">
-                                <div class="box">Paris</div>
-                            </li>
-                            <li class="city" id="i4">
-                                <div class="box">Paris</div>
-                            </li>
-                            <li class="city" id="i5">
-                                <div class="box">Paris</div>
-                            </li>
-                            <li class="city" vid="i6">
-                                <div class="box">Paris</div>
-                            </li>
-                            <li class="city" id="i7">
-                                <div class="box">Paris</div>
-                            </li>
-                            <li class="city" id="i8">
-                                <div class="box">Paris</div>
-                            </li>
-                            <li class="city" id="i9">
-                                <div class="box">Paris</div>
-                            </li>
-                            <li class="city" id="i10">
-                                <div class="box">Paris</div>
-                            </li>
-                            <li class="city" id="i11">
-                                <div class="box">Paris</div>
-                            </li>
-                        </ul>
+        <!-- Sity box-->
+        <div class="width_box_point">
 
-                    </div>
-                </div>
 
-            </li>
-            <li class="element_3">
+            <div class="point">
+
+                <ul>
+                    <li class="city i1" id="i1">
+                        <div class="box">
+                            <p class="box_city">Lisbon</p>
+                            <p class="box_temp">21 &degC <i class="wi wi-day-sunny"></i></p>
+
+                        </div>
+                    </li>
+                    <li class="city i2" id="i2">
+                        <div class="box">
+                            <p class="box_city">Paris</p>
+                            <p class="box_temp">11 &degC <i class="wi wi-day-sleet"></i></p>
+                        </div>
+                    </li>
+                    <li class="city i3" id="i3">
+                        <div class="box">
+                            <p class="box_city">Belgrade</p>
+                            <p class="box_temp">15 &degC <i class="wi wi-day-cloudy"></i></p>
+                        </div>
+                    </li>
+                    <li class="city i4" id="i4">
+                        <div class="box">
+                            <p class="box_city">Moscow</p>
+                            <p class="box_temp">21 &degC<i class="wi wi-day-cloudy-high"></i></p>
+                        </div>
+                    </li>
+                    <li class="city i5" id="i5">
+                        <div class="box">
+                            <p class="box_city">Tel Aviv</p>
+                            <p class="box_temp">32 &degC<i class="wi wi-hot"></i></p>
+                        </div>
+                    </li>
+                    <li class="city i6" vid="i6">
+                        <div class="box">
+                            <p class="box_city">Cair</p>
+                            <p class="box_temp">21 &degC<i class="wi wi-day-sunny"></i></p>
+                        </div>
+                    </li>
+                    <li class="city i7" id="i7">
+                        <div class="box">
+                            <p class="box_city">New York</p>
+                            <p class="box_temp">17 &degC<i class="wi wi-day-sleet-storm"></i></p>
+                        </div>
+                    </li>
+                    <li class="city i8" id="i8">
+                        <div class="box">
+                            <p class="box_city">New Delhi</p>
+                            <p class="box_temp">17 &degC <i class="wi wi-rain-wind"></i></p>
+                        </div>
+                    </li>
+                    <li class="city i9" id="i9">
+                        <div class="box">
+                            <p class="box_city">San Francisco</p>
+                            <p class="box_temp">15 &degC <i class="wi wi-day-sunny-overcast"></i></p>
+                        </div>
+                    </li>
+                    <li class="city i10" id="i10">
+                        <div class="box">
+                            <p class="box_city">Tokyo</p>
+                            <p class="box_temp">8 &degC <i class="wi wi-night-clear"></i></p>
+                        </div>
+                    </li>
+                    <li class="city i11" id="i11">
+                        <div class="box">
+                            <p class="box_city">Sydney</p>
+                            <p class="box_temp">25 &degC <i class="wi wi-day-sunny-overcast"></i></p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+        <div class="footer">
+            <div class="footer_title">
                 <h6>Have a nice day and dont forget umbrella if you are in New Delhi now!</h6>
-            </li>
+            </div>
+        </div>
 
-        </ul>
+
     </div>
 
 </body>

@@ -1,0 +1,127 @@
+body{
+    background-color: #e2e7ec;
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+}
+.box_news{
+    width: 1120px;
+    display: inline-flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 1100px;
+}
+.footer{
+    width: 1120px;
+display: flex;
+justify-content: center;
+margin-top: 100px;
+}
+.footer_conteyner{
+    width: 300px;
+    
+}
+.footer_conteyner span{
+    font-family: HansKendrick;
+  font-size: 13px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.31;
+  letter-spacing: 0.33px;
+  text-align: left;
+  color: #99a5b0;
+  vertical-align: top;
+  margin-left: 13px;
+}
+.box1{
+    width: 740px;
+    height: 540px;
+    background-image: linear-gradient(to top, black 0%, transparent 80%), url(./img/1.jpg) ;
+
+}
+
+
+.box1_footer{
+    width: 433px;
+    height: 100px;
+    margin-top: 400px;
+    margin-left: 21px;
+}
+.box1_footer h1{
+    
+  font-family: HansKendrick;
+  font-size: 30px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.75px;
+  text-align: left;
+  color: #ffffff;
+}
+.box1_footer p{
+    opacity: 0.5;
+  
+  font-family: HansKendrick;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.31;
+  letter-spacing: 0.33px;
+  text-align: left;
+  color: #ffffff;
+}
+.box{
+    width: 360px;
+    height: 540px;
+    
+    background-color: white;
+}
+.box_img{
+    height: 251px;
+    width: 360px;
+    
+}
+.box h1{
+    width: 307px;
+    height: 78px;
+    font-family: HansKendrick;
+    font-size: 22px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: 0.55px;
+    text-align: left;
+    color: #1d1d1d;
+    margin-left: 28px;
+    text-transform: uppercase;
+}
+.box p{
+    width: 133px;
+  height: 13px;
+  font-family: HansKendrick;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.31;
+  letter-spacing: 0.33px;
+  text-align: left;
+  color: #818181;
+  margin-left: 28px;
+
+}
+.box .icon{
+    margin: 70px 278px 25px 28px;
+}
+.box1:hover{
+    opacity: 70%;
+}
+.box:hover{
+    opacity: 70%;
+}

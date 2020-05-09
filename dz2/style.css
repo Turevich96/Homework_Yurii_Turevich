@@ -1,0 +1,194 @@
+section{
+    width: 1200px;
+  height: 1000px;
+  background-color: #464f54;
+  
+}
+.black{
+    width: 876px;
+  height: 187px;
+  box-shadow: -3.5px -3.5px 59px 0 rgba(0, 0, 0, 0.16);
+  background-color: #181818;
+  float: right;
+  margin-top: 47px;
+  
+  position: absolute;
+  margin-left: 323px;
+  
+}
+.icon{
+    width: 806px;
+    height: 76px;
+    box-shadow: -3.5px -3.5px 59px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fbc02d;
+    float: right;
+    
+    margin-top: 234px;
+}
+
+.text_blog{
+    width: 1060px;
+  height: 750px;
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.22);
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 150px;
+  padding-top: 100px;
+  
+}
+.icon svg{
+    margin: 22px 15px 22px 15px;
+}
+.icon_conteyner{
+    margin-left: 20px;
+}
+.icon .aa{
+margin-bottom: 15px;
+}
+.icon svg image{
+  opacity: 0.7;
+}
+.icon svg .bb{
+  opacity: 0.4;
+}
+.icon svg:hover image{
+  opacity: unset;
+  color: #edeff2;
+  
+}
+.icon svg:hover {
+  opacity: unset;
+  color: #edeff2;
+  
+}
+.black p{
+    font-family: ProximaNova;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 7.27;
+  letter-spacing: 4.8px;
+  text-align: left;
+  color: #767676;
+
+  margin-left: 64px;
+ 
+  
+  width: 57px;
+  height: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.black h1{
+    font-family: PlayfairDisplay;
+  font-size: 48px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.96;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fefefe;
+  margin-left: 64px;
+  
+  
+  width: 342px;
+  height: 40px;
+}
+
+}
+.black_line{
+    width: 854px;
+    height: 3px;
+background-color:white;
+opacity: 0.1;
+margin-left: 64px;
+}
+.vertical{
+    width: 2px;
+  height: 43px;
+  opacity: 0.71;
+  background-color: #edeff2;
+  display: block;
+  
+  margin-top: 66px;
+}
+.title_h1{
+    display: inline-flex;
+    
+}
+.text_heder{
+    width: 261px;
+  height: 17px;
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 4.38px;
+  text-align: left;
+  color: #b4b4b4;
+  margin-top: 94px;
+  margin-left: 123px;
+  text-transform: uppercase;
+}
+.text_blog h1{
+    width: 799px;
+    height: 54px;
+    font-family: 'Futura PT';
+    font-size: 78px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.94;
+    letter-spacing: 8px;
+    text-align: left;
+    color: #2a2a2a;
+    margin-bottom: 11px;
+    margin-left: 123px;
+    margin-top: 48px;
+    text-transform: uppercase;
+}
+.text_h2{
+    width: 651px;
+    height: 30px;
+    font-family: Georgia;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 2.07;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #8f8f8f;
+    margin-top: 0px;
+    margin-bottom: 55px;
+    margin-left: 123px;
+    
+}
+.text_box{
+  width: 806px;
+  height: 143px;
+  font-family: Georgia;
+  font-size: 27px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.48;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #000000;
+  margin-left: 124px;
+  margin-top: 64px;
+}
+.text_box2{
+    margin-top: 40px;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+height: 100%;
+}

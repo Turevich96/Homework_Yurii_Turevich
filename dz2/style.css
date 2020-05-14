@@ -53,7 +53,7 @@ a{
     height: 25px;
 }
 
-a:active{
+a:hover{
     border-bottom: 2px solid #e66a64;
     color: #fbf6e4;
     padding-bottom: 4px;
@@ -147,3 +147,34 @@ footer{
 #checkbox{
     background-color:black;
 }
+.data div input{
+    display: none;
+}
+form button{
+    margin-top: 15px;
+}
+.data div{
+    display: flex;
+}
+.data div span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color:#23AE92 ;
+    margin-right: 7px;
+    margin-top: 3px;
+    position: relative;
+}
+.data div span p{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+   
+    position: absolute;
+    bottom: -4px;
+}
+data div input:checked .check{
+    display: none;
+
+}
+

@@ -1,0 +1,290 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+main{
+  width: 1116px;
+  height: 792px;
+  margin-top: 40px;
+}
+.title .subtitle_top h4{
+    
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.36px;
+    text-align: center;
+    color: #898f8f;
+    margin-bottom: 18px;
+}
+.title .caption h1{
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 45px;
+}
+.title .line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line_left, .line_right{
+    width: 210px;
+  height: 2px;
+  background-color: #ffcc00;
+}
+.title .line img{
+    margin: 7px;
+    
+}
+.box .line{
+    width: 1px;
+  height: 560px;
+  background-color: #ffcc00;
+  margin-top: 30px;
+}
+.box .border{
+    width: 416px;
+    height: 416px;
+   
+    
+    border: solid 1px #ffcc00;
+    display: flex;
+    margin-top: 122px;
+   
+    
+}
+.foto{
+    width: 388px;
+  height: 388px;
+  border: solid 1px #ffcc00;
+  margin: auto;
+  position: relative;
+  background-image: url(./image/foto.jpg);
+  
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.b1, .b2{
+    height: 214px;
+    width: 20px;
+   
+    position: absolute;
+    background-color: white;
+}
+.b1{
+    right: -22px;
+    top: 87px;
+}
+.b2{
+    left: -22px;
+    top: 87px;
+}
+.b3, .b4{
+    width: 214px;
+    height: 20px;
+    background-color: white;
+    
+    position: absolute;
+}
+.b3{
+    
+top: -22px;
+left: 87px;
+}
+.b4{
+    bottom: -22px;
+    left: 87px;
+}
+.text .name h1{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.67;
+    letter-spacing: 0.72px;
+    text-align: center;
+    color: #666666;
+}
+.text{
+    width: 416px;
+    margin-top: 122px;
+}
+.title_line div{
+    width: 100px;
+    height: 1px;
+    background-color: #ffcc00;
+}
+.title_line {
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
+}
+.work p{
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #666666;
+    margin-top: 33px;
+}
+.icon_box{
+    margin-top: 29px;
+    width: 30px;
+    height: 30px;
+    border: solid 2px #cccccc;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    
+}
+.content p{
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    margin-top: 31px;
+    width: 416px;
+}
+.content_line{
+    width: 20px;
+    height: 4px;
+    background-color: #ffcc00;
+    margin-top: 22px;
+    margin-right: 5px;
+}
+.content_line2{
+    width: 10px;
+    height: 4px;
+    background-color: #ffcc00;
+    margin-top: 22px;
+    margin-right: 5px;
+}
+.content_line_box{
+    display: flex;
+    justify-content: center;
+    
+}
+.btn_box{
+    width: 120px;
+    height: 24px;
+    border: solid 1px #ffcc00;
+  
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+}
+.btn_box p{
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #666666;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ffcc00;
+    border-radius: 100%;
+    margin-right: 9px;
+}
+.dot2 {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 100%;
+    margin-right: 9px;
+    border: solid 1px #ffcc00;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    
+}
+.dot_box{
+    display: flex;
+    justify-content: center;
+    padding-left: 9px;
+}
+.icon_box{
+    display: flex;
+    
+}
+.icon_box svg{
+    margin: auto;
+    
+}
+.icon_box:hover{
+    background-color: #cccccc;
+    cursor: pointer;
+}
+.icon_box:hover tspan{
+    fill: #ffffff;
+}
+.btn_box:hover{
+    cursor: pointer;
+    background-color: #cccccc;
+    
+
+}
+.btn_box:hover p{
+  color: white; 
+
+}
+.dot, .dot2:hover{
+    cursor: pointer;
+}
+.right{
+    display: flex;
+}
+.right svg{
+    margin: auto 0 auto 0;
+}
+.left{
+    display: flex;
+}
+.left svg{
+    margin: auto 0 auto 0;
+}
+.left svg, .right svg:hover{
+    cursor: pointer;
+}

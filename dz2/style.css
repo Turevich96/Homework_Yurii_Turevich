@@ -53,7 +53,7 @@ a{
     height: 25px;
 }
 
-a:hover{
+a:hover, a:target{
     border-bottom: 2px solid #e66a64;
     color: #fbf6e4;
     padding-bottom: 4px;

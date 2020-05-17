@@ -48,16 +48,9 @@ nav{
     height: 62px;
     
 }
-a{
-    text-decoration: none;
-    height: 25px;
-}
 
-a:hover, a:target{
-    border-bottom: 2px solid #e66a64;
-    color: #fbf6e4;
-    padding-bottom: 4px;
-} 
+
+
 
 .data{
     padding-left: 70px;
@@ -72,37 +65,22 @@ input{
   margin-top: 11px;
 }
 label{
-    width: 80px;
+  margin-right: 33px;
   height: 12px;
   font-family: Quicksand;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #fbf6e4;
+  color: #e1c2f1;
   margin-bottom: 11px;
 }
-.data div label{
-    width: 119px;
-    
-    font-family: Quicksand;
-    font-size: 13px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fbf6e4;
-    cursor: pointer;
-}
-.data div input{
-    width: 14px;
-    height: 14px;
-}
+
+
+
 form button{
 margin: 0px 70px 0px 70px;
 width: 261px;
@@ -144,9 +122,7 @@ footer{
     margin-right: 33px;
     
 }
-#checkbox{
-    background-color:black;
-}
+
 .data div input{
     display: none;
 }
@@ -165,16 +141,37 @@ form button{
     margin-top: 3px;
     position: relative;
 }
-.data div span p{
-    margin: 0px;
-    padding: 0px;
-    color: white;
-   
+
+.data div label::before{
+    content: '\2713';
     position: absolute;
-    bottom: -4px;
-}
-data div input:checked .check{
+    left:-18px;
+    top: -4px;
     display: none;
-
 }
 
+input[type="checkbox"]:checked + ::before{
+    display: block;
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+    outline: #23AE92 solid 2px;
+}
+input[type="text"], input[type="password"]{
+    color: white;
+    font-size: 15px;
+}
+.checkb{
+    position: relative;
+}
+
+.botton{
+ display: none;
+}
+
+input[type="radio"]:checked + label{
+    border-bottom: 2px solid #e66a64;
+    color: #fbf6e4;
+    padding-bottom: 14px;
+    font-weight: 400;
+}

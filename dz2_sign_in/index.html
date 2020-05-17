@@ -9,24 +9,33 @@
 </head>
 
 <body>
+
     <main>
+
+
         <nav>
-            <a href="#form1" class="botton">Sign in</a>
-            <a href="#" class="botton"> Join us</a>
+
+            <label for="form1" class="lable01">Sign in</label>
+            <input type="radio" class="botton form01" id="form1" name="form" checked>
+
+            <label for="form2" class="lable02"> Join us</label>
+            <input type="radio" class="botton form02" id="form2" name="form">
 
         </nav>
         <form action="#" id="form1" method="GET">
             <div class="data">
                 <label for="name">Username</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="Username" id="name" required pattern="^[a-zA-Z]+$">
                 <label for="pass">Password</label>
-                <input type="password" name="pass" id="pass">
+                <input type="password" name="Userpass" id="pass" required minlength="4">
                 <div>
                     <span>
-                        <p class="check">+</p>
+                        <p class="check"></p>
                     </span>
-                    <input type="checkbox" name="" id="checkbox">
-                    <label for="checkbox">Keep me signed in</label>
+                    <div class="checkb">
+                        <input type="checkbox" name="" id="checkbox">
+                        <label for="checkbox">Keep me signed in</label>
+                    </div>
                 </div>
             </div>
 

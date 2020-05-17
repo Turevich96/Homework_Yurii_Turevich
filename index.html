@@ -11,6 +11,7 @@
 <body>
     <main>
         <section>
+            <a href="./dz2_sign_in/index.html" class="homework">Домашка_2</a>
             <div class="title">
                 <h1>Contact</h1>
                 <div>
@@ -22,10 +23,13 @@
                 <div class="center">
 
                     <form class="form" action="#">
-                        <input class="data" placeholder="Name..." type="text" name="form" id="">
-                        <input class="data" placeholder="Your email..." type="email" name="form" id="">
-                        <input class="data" placeholder="Your phone number..." type="tel" name="form" id="">
-                        <textarea class="messge" placeholder="Your messge..." type="text" name="form" id=""></textarea>
+                        <input class="data" placeholder="Name..." type="text" name="form" id="" required>
+                        <input class="data" placeholder="Your email..." type="email" name="form" id="" required>
+                        <input class="data" placeholder="Your phone number..." type="tel" name="form" id="" required
+                            pattern="^[ 0-9]+$">
+                        <textarea class="messge" placeholder="Your messge..." type="text" name="form" id=""
+                            required></textarea>
+                        <button>Send</button>
                     </form>
                     <div class="adress">
                         <p class="bold">ADDRESS</p>

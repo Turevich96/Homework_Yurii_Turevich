@@ -262,4 +262,31 @@ input{
     margin-top: 20px;
 }
     
+button{
+    width: 100px;
+    height: 50px;
+    opacity: 0.5;
+    background-color: #00c4c4;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border-radius: 7px;
+    color: white;
+    font-size: 20px;
+}
+button:hover{
+    background-color: white;
+    color: teal;
+
+}
+.homework{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: violet;
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    text-align: center;
+    padding-top: 6px;font-weight: 800;
+    text-decoration: none;
 }

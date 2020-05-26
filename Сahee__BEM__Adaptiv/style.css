@@ -564,8 +564,8 @@ table {
 }
 
 .section-conteyner__our-services_foto {
-  margin-top: 110px;
-  margin-left: 208px;
+  margin-left: 10%;
+  margin-top: 9%;
   position: relative;
 }
 
@@ -582,7 +582,8 @@ table {
   position: absolute;
   width: 129%;
   top: 260px;
-  left: -100px;
+  left: -16%;
+  padding: 3%;
 }
 
 .section-conteyner__our-services__menu__list p {

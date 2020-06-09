@@ -1,0 +1,205 @@
+.content-box {
+  padding-left: 18.5%;
+  padding-right: 18.5%;
+
+  @include desktop {
+    width: 1115.124px;
+    margin: auto;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  @include laptop {
+    padding-left: 16.5%;
+    padding-right: 16.5%;
+  }
+  @include tablet {
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+  }
+  @include mobile-w {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
+  @include mobile {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
+}
+.bhromaon {
+  background-image: url(../../assets/images/bg_bhromaon.jpg);
+  padding-bottom: 140px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 265px;
+
+  background-size: cover;
+
+  @include mobile-w {
+    padding-bottom: 40px;
+    padding-top: 205px;
+  }
+  @include mobile {
+    padding-bottom: 40px;
+    padding-top: 205px;
+  }
+  @include tablet {
+    height: 742px;
+  }
+  @include laptop {
+    height: 742px;
+  }
+  @include desktop {
+    height: 742px;
+  }
+}
+.bhromaon-content {
+  &__title {
+    font-family: "Josefin Sans";
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    text-align: center;
+    color: $text-white;
+    margin-bottom: 7px;
+
+    @media (min-width: 100px) and (max-width: 571px) {
+      font-size: 38px;
+    }
+  }
+  &__subtitle {
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    margin-bottom: 50px;
+    letter-spacing: 5.3px;
+    text-align: center;
+    color: $text-white;
+
+    @media (min-width: 100px) and (max-width: 571px) {
+      font-size: 19px;
+      letter-spacing: 2.3px;
+    }
+  }
+  &__search {
+    @include flex;
+
+    margin-bottom: 114px;
+
+    &__input {
+      width: 500px;
+      height: 60px;
+      background-color: $text-white;
+      border: none;
+      outline: none;
+      font-family: "Josefin Sans";
+      font-size: 22px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      color: #999999;
+      @include mobile {
+        font-size: 17px;
+      }
+    }
+    &__input:focus {
+      padding-left: 20px;
+    }
+
+    &__input::placeholder {
+      font-family: "Josefin Sans";
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+
+      letter-spacing: 1.8px;
+      text-align: center;
+      color: #999999;
+
+      @include mobile {
+        letter-spacing: 0px;
+      }
+      @include mobile-w {
+        letter-spacing: 0px;
+      }
+
+      @media (min-width: 100px) and (max-width: 571px) {
+        font-size: 12px;
+      }
+    }
+
+    &__button {
+      width: 150px;
+      height: 60px;
+      border: solid 2px $text-white;
+      background-color: $button;
+      font-family: Aleo;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.86;
+      letter-spacing: 1.4px;
+      text-align: center;
+      color: $text-white;
+      text-transform: uppercase;
+      outline: none;
+      padding-left: 18px;
+
+      @include mobile-w {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      @include mobile {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+  &__scroll-down:hover {
+    cursor: pointer;
+  }
+  &__scroll-down {
+    text-align: center;
+    @include mobile-w {
+      display: none;
+    }
+    @include mobile {
+      display: none;
+    }
+
+    &__title {
+      font-family: "Josefin Sans";
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.86;
+      letter-spacing: 1.8px;
+      text-align: center;
+      color: $text-white;
+    }
+  }
+}
+.icon-search {
+  margin-left: 8px;
+  font-size: 21px;
+  vertical-align: text-bottom;
+  height: 24px;
+
+  @include mobile-w {
+    margin-left: 4px;
+  }
+  @include mobile {
+    margin-left: 4px;
+    font-size: 17px;
+  }
+}
+.icon-down {
+  font-size: 8px;
+}

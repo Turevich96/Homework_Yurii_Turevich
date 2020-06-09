@@ -1,0 +1,164 @@
+.choose {
+  background-image: url(../../assets/images/bg_Why-Choose-Us.jpg);
+  padding-bottom: 120px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 120px;
+
+  background-size: cover;
+  @include desktop {
+    height: 685px;
+  }
+  @include laptop {
+    height: 685px;
+  }
+  @include tablet {
+    height: 685px;
+  }
+  @include mobile-w {
+    height: 685px;
+  }
+  @include mobile {
+    padding-top: 0px;
+    height: 100%;
+    padding-bottom: 40px;
+  }
+}
+.choose-content {
+  display: flex;
+  justify-content: space-between;
+
+  &__left {
+    width: 50%;
+    padding-top: 81px;
+
+    @include tablet {
+      width: 75%;
+      padding-top: 10px;
+    }
+    @include laptop {
+      width: 60%;
+      padding-top: 5%;
+    }
+    @include mobile-w {
+      width: 100%;
+      margin-right: 0px;
+      text-align: center;
+    }
+    @include mobile {
+      width: 100%;
+      margin-right: 0px;
+      text-align: center;
+    }
+    &__title {
+      font-family: Aleo;
+      font-size: 36px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.72;
+      letter-spacing: normal;
+      text-align: left;
+      color: $text-white;
+      margin-bottom: 67px;
+
+      @include mobile-w {
+        text-align: center;
+      }
+      @include mobile {
+        text-align: center;
+      }
+    }
+    &__text {
+      font-family: "Josefin Sans";
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.63;
+      letter-spacing: 1.3px;
+      text-align: left;
+      color: #e8e8e8;
+      margin-bottom: 21px;
+      max-width: 544px;
+
+      @include mobile-w {
+        text-align: center;
+        max-width: 100%;
+        margin-right: 0px;
+      }
+      @include mobile {
+        text-align: center;
+        max-width: 100%;
+        margin-right: 0px;
+      }
+    }
+    &__button {
+      width: 225px;
+      height: 60px;
+      background-color: $button;
+      border: none;
+      font-family: Aleo;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.63;
+      letter-spacing: 1.2px;
+      text-align: left;
+      color: $text-white;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 25px;
+    }
+  }
+  &__right {
+    width: 50%;
+    position: relative;
+    width: 475px;
+
+    @include mobile-w {
+      display: none;
+    }
+    @include mobile {
+      display: none;
+    }
+
+    &__top {
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      max-height: 50.5%;
+      margin-bottom: 5px;
+
+      @include laptop {
+        max-width: 84%;
+      }
+      @include tablet {
+        max-width: 84%;
+      }
+      @include mobile-w {
+        max-width: 84%;
+      }
+    }
+    &__down {
+      position: absolute;
+      right: 0px;
+
+      bottom: -10px;
+
+      @include laptop {
+        max-width: 84%;
+        bottom: -20px;
+      }
+      @include tablet {
+        max-width: 84%;
+        bottom: 5%;
+      }
+      @include mobile-w {
+        max-width: 84%;
+        bottom: 5%;
+      }
+    }
+  }
+}

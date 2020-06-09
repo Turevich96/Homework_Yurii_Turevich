@@ -1,6 +1,7 @@
 .menu-conteyner {
   background-color: $button;
 }
+
 .menu {
   height: 80px;
   background-color: $button;
@@ -176,4 +177,7 @@
   @include mobile-w {
     display: block;
   }
+}
+.menu__box {
+  z-index: +2;
 }

@@ -891,6 +891,10 @@ ul {
   }
 }
 
+.menu__box {
+  z-index: 2;
+}
+
 .choose {
   background-image: url(../../assets/images/bg_Why-Choose-Us.jpg);
   padding-bottom: 120px;

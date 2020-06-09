@@ -1,0 +1,1660 @@
+@charset "UTF-8";
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+  * Correct `inline-block` display not defined in IE 8/9.
+  */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+  * Prevent modern browsers from displaying `audio` without controls.
+  * Remove excess height in iOS 5 devices.
+  */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+  * Address `[hidden]` styling not present in IE 8/9.
+  * Hide the `template` element in IE, Safari, and Firefox < 22.
+  */
+[hidden],
+template {
+  display: none;
+}
+
+/* ==========================================================================
+    Base
+    ========================================================================== */
+/**
+  * 1. Set default font family to sans-serif.
+  * 2. Prevent iOS text size adjust after orientation change, without disabling
+  *    user zoom.
+  */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* ==========================================================================
+    Links
+    ========================================================================== */
+/**
+  * Remove the gray background color from active links in IE 10.
+  */
+a {
+  background: transparent;
+  text-decoration: none;
+}
+
+/**
+  * Address `outline` inconsistency between Chrome and other browsers.
+  */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+  * Improve readability when focused and also mouse hovered in all browsers.
+  */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+    Typography
+    ========================================================================== */
+/**
+  * Address variable `h1` font-size and margin within `section` and `article`
+  * contexts in Firefox 4+, Safari 5, and Chrome.
+  */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0px;
+  padding: 0px;
+}
+
+/**
+  * Address styling not present in IE 8/9, Safari 5, and Chrome.
+  */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+  */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+  * Address styling not present in Safari 5 and Chrome.
+  */
+dfn {
+  font-style: italic;
+}
+
+/**
+  * Address differences between Firefox and other browsers.
+  */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+  * Address styling not present in IE 8/9.
+  */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+  * Correct font family set oddly in Safari 5 and Chrome.
+  */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+  * Improve readability of pre-formatted text in all browsers.
+  */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+  * Set consistent quote types.
+  */
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+/**
+  * Address inconsistent and variable font size in all browsers.
+  */
+small {
+  font-size: 80%;
+}
+
+/**
+  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+  */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+    Embedded content
+    ========================================================================== */
+/**
+  * Remove border when inside `a` element in IE 8/9.
+  */
+img {
+  border: 0;
+}
+
+/**
+  * Correct overflow displayed oddly in IE 9.
+  */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+    Figures
+    ========================================================================== */
+/**
+  * Address margin not present in IE 8/9 and Safari 5.
+  */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+    Forms
+    ========================================================================== */
+/**
+  * Define consistent border, margin, and padding.
+  */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+  * 1. Correct `color` not being inherited in IE 8/9.
+  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+  */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+  * 1. Correct font family not being inherited in all browsers.
+  * 2. Correct font size not being inherited in all browsers.
+  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+  */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+  * the UA stylesheet.
+  */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+  * Address inconsistent `text-transform` inheritance for `button` and `select`.
+  * All other form control elements do not inherit `text-transform` values.
+  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+  * Correct `select` style inheritance in Firefox 4+ and Opera.
+  */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+  *    and `video` controls.
+  * 2. Correct inability to style clickable `input` types in iOS.
+  * 3. Improve usability and consistency of cursor style between image-type
+  *    `input` and others.
+  */
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+  * Re-set default cursor for disabled elements.
+  */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+  * 1. Address box sizing set to `content-box` in IE 8/9/10.
+  * 2. Remove excess padding in IE 8/9/10.
+  */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+  *    (include `-moz` to future-proof).
+  */
+input[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+  * Remove inner padding and search cancel button in Safari 5 and Chrome
+  * on OS X.
+  */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+  * Remove inner padding and border in Firefox 4+.
+  */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+  * 1. Remove default vertical scrollbar in IE 8/9.
+  * 2. Improve readability and alignment in all browsers.
+  */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+    Tables
+    ========================================================================== */
+/**
+  * Remove most spacing between table cells.
+  */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?rz1br6");
+  src: url("../../assets/icons-fonts/icomoon.eot") format("embedded-opentype"), url("../../assets/icons-fonts/icomoon.ttf") format("truetype"), url("../../assets/icons-fonts/icomoon.woff") format("woff"), url("../../assets/icons-fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-down:before {
+  content: "";
+  color: #fff;
+}
+
+.icon-search:before {
+  content: "";
+  color: #fff;
+}
+
+.icon-1:before {
+  content: "";
+  color: #5474fd;
+}
+
+.icon-2:before {
+  content: "";
+  color: #5474fd;
+}
+
+.icon-3:before {
+  content: "";
+  color: #5474fd;
+}
+
+.icon-f1:before {
+  content: "";
+}
+
+.icon-f2:before {
+  content: "";
+}
+
+.icon-f3:before {
+  content: "";
+}
+
+.icon-f4:before {
+  content: "";
+}
+
+.icon-f5:before {
+  content: "";
+}
+
+.content-box {
+  padding-left: 18.5%;
+  padding-right: 18.5%;
+}
+@media (min-width: 1366px) {
+  .content-box {
+    width: 1115.124px;
+    margin: auto;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .content-box {
+    padding-left: 16.5%;
+    padding-right: 16.5%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content-box {
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .content-box {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
+}
+@media (max-width: 575px) {
+  .content-box {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
+}
+
+.bhromaon {
+  background-image: url(../../assets/images/bg_bhromaon.jpg);
+  padding-bottom: 140px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 265px;
+  background-size: cover;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .bhromaon {
+    padding-bottom: 40px;
+    padding-top: 205px;
+  }
+}
+@media (max-width: 575px) {
+  .bhromaon {
+    padding-bottom: 40px;
+    padding-top: 205px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .bhromaon {
+    height: 742px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .bhromaon {
+    height: 742px;
+  }
+}
+@media (min-width: 1366px) {
+  .bhromaon {
+    height: 742px;
+  }
+}
+
+.bhromaon-content__title {
+  font-family: "Josefin Sans";
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 7px;
+}
+@media (min-width: 100px) and (max-width: 571px) {
+  .bhromaon-content__title {
+    font-size: 38px;
+  }
+}
+.bhromaon-content__subtitle {
+  font-family: "Josefin Sans";
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  margin-bottom: 50px;
+  letter-spacing: 5.3px;
+  text-align: center;
+  color: #ffffff;
+}
+@media (min-width: 100px) and (max-width: 571px) {
+  .bhromaon-content__subtitle {
+    font-size: 19px;
+    letter-spacing: 2.3px;
+  }
+}
+.bhromaon-content__search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 114px;
+}
+.bhromaon-content__search__input {
+  width: 500px;
+  height: 60px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  font-family: "Josefin Sans";
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  color: #999999;
+}
+@media (max-width: 575px) {
+  .bhromaon-content__search__input {
+    font-size: 17px;
+  }
+}
+.bhromaon-content__search__input:focus {
+  padding-left: 20px;
+}
+.bhromaon-content__search__input::-ms-input-placeholder {
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #999999;
+}
+.bhromaon-content__search__input::placeholder {
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #999999;
+}
+@media (max-width: 575px) {
+  .bhromaon-content__search__input::-ms-input-placeholder {
+    letter-spacing: 0px;
+  }
+  .bhromaon-content__search__input::placeholder {
+    letter-spacing: 0px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .bhromaon-content__search__input::-ms-input-placeholder {
+    letter-spacing: 0px;
+  }
+  .bhromaon-content__search__input::placeholder {
+    letter-spacing: 0px;
+  }
+}
+@media (min-width: 100px) and (max-width: 571px) {
+  .bhromaon-content__search__input::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .bhromaon-content__search__input::placeholder {
+    font-size: 12px;
+  }
+}
+.bhromaon-content__search__button {
+  width: 150px;
+  height: 60px;
+  border: solid 2px #ffffff;
+  background-color: #5474fd;
+  font-family: Aleo;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  outline: none;
+  padding-left: 18px;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .bhromaon-content__search__button {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (max-width: 575px) {
+  .bhromaon-content__search__button {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.bhromaon-content__scroll-down:hover {
+  cursor: pointer;
+}
+.bhromaon-content__scroll-down {
+  text-align: center;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .bhromaon-content__scroll-down {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .bhromaon-content__scroll-down {
+    display: none;
+  }
+}
+.bhromaon-content__scroll-down__title {
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.icon-search {
+  margin-left: 8px;
+  font-size: 21px;
+  vertical-align: text-bottom;
+  height: 24px;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .icon-search {
+    margin-left: 4px;
+  }
+}
+@media (max-width: 575px) {
+  .icon-search {
+    margin-left: 4px;
+    font-size: 17px;
+  }
+}
+
+.icon-down {
+  font-size: 8px;
+}
+
+.menu-conteyner {
+  background-color: #5474fd;
+}
+
+.menu {
+  height: 80px;
+  background-color: #5474fd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: -34px;
+  margin: auto;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .menu {
+    display: none;
+  }
+}
+.menu__logo {
+  font-family: "Josefin Sans";
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.navigation__list {
+  display: flex;
+}
+.navigation__list__string {
+  font-family: Aleo;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+  margin-left: 40px;
+  text-transform: uppercase;
+  transition: 400ms;
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .navigation__list__string {
+    margin-right: 13px;
+    font-size: 13px;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navigation__list__string {
+    margin-left: 17px;
+    font-size: 13px;
+  }
+}
+
+/* hamburger-menu */
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__toggle:active {
+  display: none;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: rgba(250, 250, 250, 0.9);
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.25s;
+}
+@media (max-width: 575px) {
+  .menu__box {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #5474fd;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+@media (max-width: 575px) {
+  .menu__item {
+    font-size: 30px;
+  }
+}
+
+.menu__item:hover {
+  color: #95a8ff;
+  font-size: 35px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+@media (max-width: 575px) {
+  .hamburger-menu {
+    display: block;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+.menu__box {
+  z-index: 2;
+}
+
+.choose {
+  background-image: url(../../assets/images/bg_Why-Choose-Us.jpg);
+  padding-bottom: 120px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 120px;
+  background-size: cover;
+}
+@media (min-width: 1366px) {
+  .choose {
+    height: 685px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .choose {
+    height: 685px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .choose {
+    height: 685px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .choose {
+    height: 685px;
+  }
+}
+@media (max-width: 575px) {
+  .choose {
+    padding-top: 0px;
+    height: 100%;
+    padding-bottom: 40px;
+  }
+}
+
+.choose-content {
+  display: flex;
+  justify-content: space-between;
+}
+.choose-content__left {
+  width: 50%;
+  padding-top: 81px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .choose-content__left {
+    width: 75%;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .choose-content__left {
+    width: 60%;
+    padding-top: 5%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .choose-content__left {
+    width: 100%;
+    margin-right: 0px;
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .choose-content__left {
+    width: 100%;
+    margin-right: 0px;
+    text-align: center;
+  }
+}
+.choose-content__left__title {
+  font-family: Aleo;
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.72;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 67px;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .choose-content__left__title {
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .choose-content__left__title {
+    text-align: center;
+  }
+}
+.choose-content__left__text {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: 1.3px;
+  text-align: left;
+  color: #e8e8e8;
+  margin-bottom: 21px;
+  max-width: 544px;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .choose-content__left__text {
+    text-align: center;
+    max-width: 100%;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 575px) {
+  .choose-content__left__text {
+    text-align: center;
+    max-width: 100%;
+    margin-right: 0px;
+  }
+}
+.choose-content__left__button {
+  width: 225px;
+  height: 60px;
+  background-color: #5474fd;
+  border: none;
+  font-family: Aleo;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.choose-content__right {
+  width: 50%;
+  position: relative;
+  width: 475px;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .choose-content__right {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .choose-content__right {
+    display: none;
+  }
+}
+.choose-content__right__top {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  max-height: 50.5%;
+  margin-bottom: 5px;
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .choose-content__right__top {
+    max-width: 84%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .choose-content__right__top {
+    max-width: 84%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .choose-content__right__top {
+    max-width: 84%;
+  }
+}
+.choose-content__right__down {
+  position: absolute;
+  right: 0px;
+  bottom: -10px;
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .choose-content__right__down {
+    max-width: 84%;
+    bottom: -20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .choose-content__right__down {
+    max-width: 84%;
+    bottom: 5%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .choose-content__right__down {
+    max-width: 84%;
+    bottom: 5%;
+  }
+}
+
+.infografic {
+  background-image: url(../../assets/images/bg_infografic.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  background-color: #333333;
+}
+@media (min-width: 1366px) {
+  .infografic {
+    height: 337px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .infografic {
+    height: 337px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .infografic {
+    height: 337px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .infografic {
+    background-image: url();
+  }
+}
+@media (max-width: 575px) {
+  .infografic {
+    background-image: url();
+  }
+}
+
+.infografic-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5.4%;
+  width: 220px;
+  width: 55%;
+  margin: auto;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .infografic-content {
+    width: 80%;
+  }
+}
+@media (max-width: 575px) {
+  .infografic-content {
+    width: 80%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .infografic-box {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .infografic-box {
+    margin-bottom: 40px;
+  }
+}
+.infografic-box__icon-contetner {
+  background-color: #333333;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+}
+.infografic-box__icon-contetner {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+@media (max-width: 575px) {
+  .infografic-box__icon-contetner {
+    font-size: 40px;
+  }
+}
+.infografic-box__icon-contetner:hover .icon-2:before {
+  color: #ff6363;
+}
+.infografic-box__icon-contetner:hover .icon-1:before {
+  color: #ff6363;
+}
+.infografic-box__icon-contetner:hover .icon-3:before {
+  color: #ff6363;
+}
+.infografic-box__title {
+  font-family: Aleo;
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #e8e8e8;
+  margin-top: 17%;
+}
+@media (min-width: 1366px) {
+  .infografic-box__title {
+    line-height: 0;
+  }
+}
+@media (max-width: 575px) {
+  .infografic-box__title {
+    font-size: 20px;
+  }
+}
+.infografic-box__title:hover {
+  cursor: pointer;
+}
+
+.infografic-box:hover .icon-2:before {
+  color: #ff6363;
+  cursor: pointer;
+}
+
+.infografic-box:hover .icon-1:before {
+  color: #ff6363;
+  cursor: pointer;
+}
+
+.infografic-box:hover .icon-3:before {
+  color: #ff6363;
+  cursor: pointer;
+}
+
+.box-2 {
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.icon-3:before:hover {
+  color: #ff6363;
+}
+
+.spain-room {
+  background-image: url(../../assets/images/bg_spain-room.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 700px;
+  background-size: cover;
+}
+@media (max-width: 575px) {
+  .spain-room {
+    height: 600px;
+  }
+}
+
+.spain-content {
+  padding-top: 229px;
+}
+@media (max-width: 575px) {
+  .spain-content {
+    padding-top: 110px;
+    height: 550px;
+  }
+}
+
+.text-box {
+  width: 540px;
+  opacity: 0.9;
+  background-color: #333333;
+  padding-top: 43px;
+  padding-left: 33px;
+  padding-right: 22px;
+}
+@media (min-width: 1366px) {
+  .text-box {
+    height: 371px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .text-box {
+    height: 371px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .text-box {
+    width: 80%;
+    height: 371px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .text-box {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .text-box {
+    width: 100%;
+  }
+}
+.text-box__cantry {
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: #e8e8e8;
+  margin-bottom: 24px;
+}
+.text-box__title {
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.text-box__text {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  text-align: left;
+  color: #e8e8e8;
+  margin-bottom: 42px;
+}
+.text-box__button {
+  width: 225px;
+  height: 60px;
+  background-color: #496bfe;
+  border: none;
+  font-family: Aleo;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .text-box__button {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 575px) {
+  .text-box__button {
+    margin-bottom: 35px;
+    width: 55%;
+  }
+}
+
+.spain-hill {
+  background-image: url(../../assets/images/bg_spain-hill.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 700px;
+  background-size: cover;
+}
+@media (max-width: 575px) {
+  .spain-hill {
+    padding-top: 100px;
+    height: 600px;
+  }
+}
+
+.spain-hill-content {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 229px;
+}
+@media (max-width: 575px) {
+  .spain-hill-content {
+    padding-top: 0px;
+  }
+}
+
+.text-box {
+  width: 540px;
+  opacity: 0.9;
+  background-color: #232323;
+  padding-top: 43px;
+  padding-left: 33px;
+  padding-right: 22px;
+}
+@media (min-width: 1366px) {
+  .text-box {
+    height: 371px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .text-box {
+    height: 371px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .text-box {
+    width: 80%;
+    height: 371px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .text-box {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .text-box {
+    width: 100%;
+  }
+}
+
+.tourist-say {
+  background-image: url(../../assets/images/bg_tourist-say.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 200px;
+  padding-top: 120px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tourist-say {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .tourist-say {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .tourist-say {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+@media (max-width: 575px) {
+  .tourist-say {
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+}
+
+.tourist-say-content__title {
+  font-family: Aleo;
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.72;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 98px;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .tourist-say-content__title {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 575px) {
+  .tourist-say-content__title {
+    margin-bottom: 60px;
+    font-size: 26px;
+  }
+}
+
+.center-box {
+  min-height: 284px;
+  width: 100%;
+  background-color: #333333;
+  display: flex;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .center-box {
+    display: block;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .center-box {
+    display: block;
+  }
+}
+@media (max-width: 575px) {
+  .center-box {
+    display: block;
+  }
+}
+.center-box__left {
+  background-image: url(../../assets/images/men.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .center-box__left {
+    height: 300px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .center-box__left {
+    height: 300px;
+  }
+}
+@media (max-width: 575px) {
+  .center-box__left {
+    height: 220px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .center-box__left {
+    background-position-x: 70%;
+    min-width: 445px;
+  }
+}
+@media (min-width: 1366px) {
+  .center-box__left {
+    background-position-x: 70%;
+    min-width: 445px;
+  }
+}
+.center-box__right {
+  width: 665px;
+  padding-left: 60px;
+  padding-top: 50px;
+  padding-right: 40px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .center-box__right {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .center-box__right {
+    padding-bottom: 30px;
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .center-box__right {
+    padding-bottom: 20px;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .center-box__right {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+}
+.center-box__right__title {
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fefefe;
+  margin-bottom: 41px;
+}
+.center-box__right__text {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  text-align: left;
+  color: #e8e8e8;
+  margin-bottom: 23px;
+}
+
+.simvol {
+  height: 15px;
+  width: 30px;
+  float: left;
+  line-height: 1;
+  font-family: cursive;
+  color: #5474fd;
+  font-size: 50px;
+}
+
+.footer-site {
+  background-color: #232323;
+}
+
+.footer-content {
+  padding-top: 65px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+@media (min-width: 1366px) {
+  .footer-content {
+    padding-top: 117px;
+    height: 268px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .footer-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .footer-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer-content {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+.footer-content__logo {
+  font-family: "Josefin Sans";
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.08;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.footer-content__subtitle {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 21px;
+}
+@media (min-width: 1366px) {
+  .footer-content__icon-box {
+    padding-left: 10px;
+  }
+}
+.footer-content__icon-box__icon {
+  width: 55px;
+  height: 35px;
+  margin: 10px;
+}
+.footer-content__icon-box__icon:hover .svg-color {
+  fill: #5474fd;
+  cursor: pointer;
+  color: #5474fd;
+}

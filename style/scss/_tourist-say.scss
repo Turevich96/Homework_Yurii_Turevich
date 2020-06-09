@@ -1,0 +1,148 @@
+.tourist-say {
+  background-image: url(../../assets/images/bg_tourist-say.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 200px;
+  padding-top: 120px;
+
+  @include tablet {
+    padding-bottom: 100px;
+  }
+  @include laptop {
+    padding-bottom: 100px;
+  }
+  @include mobile-w {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  @include mobile {
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+}
+.tourist-say-content {
+  &__title {
+    font-family: Aleo;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.72;
+    letter-spacing: normal;
+    text-align: center;
+    color: $text-white;
+    margin-bottom: 98px;
+
+    @include mobile-w {
+      margin-bottom: 60px;
+    }
+    @include mobile {
+      margin-bottom: 60px;
+      font-size: 26px;
+    }
+  }
+}
+.center-box {
+  min-height: 284px;
+  width: 100%;
+  background-color: $bg-infografic;
+  display: flex;
+
+  @include tablet {
+    display: block;
+  }
+  @include mobile-w {
+    display: block;
+  }
+  @include mobile {
+    display: block;
+  }
+
+  &__left {
+    background-image: url(../../assets/images/men.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include tablet {
+      height: 300px;
+    }
+    @include mobile-w {
+      height: 300px;
+    }
+    @include mobile {
+      height: 220px;
+    }
+
+    @include laptop {
+      background-position-x: 70%;
+
+      min-width: 445px;
+    }
+    @include desktop {
+      background-position-x: 70%;
+
+      min-width: 445px;
+    }
+  }
+  &__right {
+    width: 665px;
+    padding-left: 60px;
+    padding-top: 50px;
+    padding-right: 40px;
+    
+    @include tablet {
+      padding-bottom: 30px;
+    }
+    @include mobile-w {
+      padding-bottom: 30px;
+      width: 100%;
+    }
+    @include mobile {
+      padding-bottom: 20px;
+      width: 100%;
+      padding-left: 15px;
+      padding-top: 15px;
+      padding-right: 15px;
+    }
+
+    @include laptop {
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+
+    &__title {
+      font-family: "Josefin Sans";
+      font-size: 20px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      text-transform: uppercase;
+      letter-spacing: normal;
+      text-align: left;
+      color: #fefefe;
+      margin-bottom: 41px;
+    }
+    &__text {
+      font-family: "Josefin Sans";
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.63;
+      letter-spacing: normal;
+      text-align: left;
+      color: #e8e8e8;
+      margin-bottom: 23px;
+    }
+  }
+}
+.simvol {
+  height: 15px;
+  width: 30px;
+  float: left;
+  line-height: 1;
+  font-family: cursive;
+  color: $button;
+
+  font-size: 50px;
+}

@@ -1,0 +1,47 @@
+.spain-hill {
+  background-image: url(../../assets/images/bg_spain-hill.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 700px;
+  background-size: cover;
+
+  @include mobile {
+    padding-top: 100px;
+    height: 600px;
+  }
+}
+.spain-hill-content {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 229px;
+  @include mobile {
+    padding-top: 0px;
+  }
+}
+.text-box {
+  width: 540px;
+
+  opacity: 0.9;
+  background-color: $bg-footer;
+  padding-top: 43px;
+  padding-left: 33px;
+  padding-right: 22px;
+
+  @include desktop {
+    height: 371px;
+  }
+  @include laptop {
+    height: 371px;
+  }
+
+  @include tablet {
+    width: 80%;
+    height: 371px;
+  }
+  @include mobile-w {
+    width: 100%;
+  }
+  @include mobile {
+    width: 100%;
+  }
+}

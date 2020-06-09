@@ -1,0 +1,116 @@
+.infografic {
+  background-image: url(../../assets/images/bg_infografic.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  position: relative;
+  background-color: #333333;
+
+  @include desktop {
+    height: 337px;
+  }
+  @include laptop {
+    height: 337px;
+  }
+  @include tablet {
+    height: 337px;
+  }
+  @include mobile-w {
+    background-image: url();
+  }
+  @include mobile {
+    background-image: url();
+  }
+}
+.infografic-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5.4%;
+  width: 220px;
+  width: 55%;
+  margin: auto;
+
+  @include mobile-w {
+    width: 80%;
+  }
+  @include mobile {
+    width: 80%;
+  }
+}
+.infografic-box {
+  @include mobile-w {
+    margin-bottom: 40px;
+  }
+  @include mobile {
+    margin-bottom: 40px;
+  }
+  &__icon-contetner {
+    background-color: #333333;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+  }
+  &__icon-contetner {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    @include mobile {
+      font-size: 40px;
+    }
+  }
+  &__icon-contetner:hover .icon-2:before {
+    color: #ff6363;
+  }
+  &__icon-contetner:hover .icon-1:before {
+    color: #ff6363;
+  }
+  &__icon-contetner:hover .icon-3:before {
+    color: #ff6363;
+  }
+  &__title {
+    font-family: Aleo;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+
+    letter-spacing: normal;
+    text-align: center;
+    color: #e8e8e8;
+    margin-top: 17%;
+
+    @include desktop {
+      line-height: 0;
+    }
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+  &__title:hover {
+    cursor: pointer;
+  }
+}
+.infografic-box:hover .icon-2:before {
+  color: $icon-hover;
+  cursor: pointer;
+}
+.infografic-box:hover .icon-1:before {
+  color: $icon-hover;
+  cursor: pointer;
+}
+.infografic-box:hover .icon-3:before {
+  color: $icon-hover;
+  cursor: pointer;
+}
+
+.box-2 {
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.icon-3:before:hover {
+  color: $icon-hover;
+}

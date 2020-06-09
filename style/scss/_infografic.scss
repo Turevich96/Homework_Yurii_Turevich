@@ -56,6 +56,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+
     @include mobile {
       font-size: 40px;
     }
@@ -80,6 +81,7 @@
     text-align: center;
     color: #e8e8e8;
     margin-top: 17%;
+
     @include desktop {
       line-height: 0;
     }
@@ -108,8 +110,7 @@
   margin-left: 6%;
   margin-right: 6%;
 }
-n-3:before {
-}
+
 .icon-3:before:hover {
   color: $icon-hover;
 }

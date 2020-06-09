@@ -757,6 +757,7 @@ ul {
   color: #ffffff;
   margin-left: 40px;
   text-transform: uppercase;
+  transition: 400ms;
 }
 @media (min-width: 1024px) and (max-width: 1365px) {
   .navigation__list__string {
@@ -890,7 +891,6 @@ ul {
   }
 }
 
-/*!!!!!*/
 .choose {
   background-image: url(../../assets/images/bg_Why-Choose-Us.jpg);
   padding-bottom: 120px;

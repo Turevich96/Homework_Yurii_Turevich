@@ -4,6 +4,7 @@
   background-size: 100%;
   height: 700px;
   background-size: cover;
+
   @include mobile {
     height: 600px;
   }
@@ -18,7 +19,6 @@
 }
 .text-box {
   width: 540px;
-
   opacity: 0.9;
   background-color: $bg-infografic;
   padding-top: 43px;

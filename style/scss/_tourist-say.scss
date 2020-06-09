@@ -32,6 +32,7 @@
     text-align: center;
     color: $text-white;
     margin-bottom: 98px;
+
     @include mobile-w {
       margin-bottom: 60px;
     }
@@ -61,6 +62,7 @@
     background-image: url(../../assets/images/men.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
     @include tablet {
       height: 300px;
     }
@@ -87,6 +89,7 @@
     padding-left: 60px;
     padding-top: 50px;
     padding-right: 40px;
+    
     @include tablet {
       padding-bottom: 30px;
     }

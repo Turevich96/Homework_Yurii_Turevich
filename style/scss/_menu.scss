@@ -8,7 +8,6 @@
   align-items: center;
   justify-content: space-between;
   margin-right: -34px;
-
   margin: auto;
 
   @include mobile-w {
@@ -46,6 +45,7 @@
       color: $text-white;
       margin-left: 40px;
       text-transform: uppercase;
+      transition: 400ms;
 
       @include laptop {
         margin-right: 13px;
@@ -177,4 +177,3 @@
     display: block;
   }
 }
-/*!!!!!*/

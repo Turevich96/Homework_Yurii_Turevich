@@ -1,0 +1,48 @@
+.svitlofor-conteyner{
+&__svitlofor{
+justify-content: center;
+display: flex;
+padding-top: 100px;
+}
+&__button {
+    width:  100px;
+    height: 100px;
+    background-color: tan;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20%;
+}
+}
+.svitlofor-corpus{
+    background-color: black;
+    width: 300px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    display: grid;
+    
+
+    &__red{
+        background-color: silver;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    &__yellow{
+        background-color: silver;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    &__green{
+        background-color: silver;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin: auto; 
+        margin-bottom: 20px;  
+    }
+}

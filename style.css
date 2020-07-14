@@ -1,0 +1,225 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.sity{
+    background: url(./assets/img/bg.png);
+    background-color: rgba(41, 45, 62, 1);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+}
+.window-game{
+    width: 600px;
+    height: 541px;
+    box-shadow: 0px 23px 57px 0 rgba(0, 0, 0, 0.4);
+    background-color: #212534;
+    margin: auto;
+    
+    
+}
+nav{
+    height: 115px;
+    background-color: #2b3040;
+    width: 100%;
+}
+.content{
+    display: flex;
+}
+.content__left__img{
+    width: 160px;
+    height: 230px;
+    background-image: url(./assets/img/farcry4.jpg);
+    margin-left: 47px;
+    margin-top: 54px;
+    margin-right: 47px;
+}
+.content__right{
+    padding-top: 57px;
+    padding-right: 46px;
+    position: relative;
+}
+.content__right__title{
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+  
+    letter-spacing: normal;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.content__right__subtitle{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fdfdfd;
+    margin-bottom: 42px;
+}
+
+.content__right__text{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: left;
+    color: #b7bacd;
+    margin-bottom: 61px;
+}
+.content__right__reyting{
+    width: 69px;
+    height: 69px;
+    border: 2px solid #787c9b;
+    border-radius: 100%;
+    border-right: 5px solid #01d5bb;
+    border-bottom: 5px solid #01d5bb;
+    position: absolute;
+    right: 46px;
+    top: 60px;
+    
+}
+.content__right__reyting__numb{
+   text-align: center;
+   font-family: Lato;
+   font-size: 20px;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+
+   letter-spacing: normal;
+height: 100%;
+   color: #aaadbb;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+
+  
+
+}
+.buy{
+    width: 100%;
+    display: flex;
+}
+.buy__sale{
+    width: 70px;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fedc3f; 
+   
+}
+
+.buy__button{
+    width: 164px;
+    height: 55px;
+    border-radius: 2px;
+    background-color: #13e28d;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.buy__prise{
+    width: 110px;
+    height: 31px;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    margin-right: 37px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    
+}
+.buy__prise::before{
+    content: '20% OFF!';
+    width: 54px;
+    height: 10px;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fedc3f;
+    position: absolute;
+    top: -20px;
+    
+}
+.content__left__reyting{
+    margin-left: 64px;
+    margin-top: 28px;
+}
+.link{
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b7bacd;
+    width: 82px;
+    height: 100%;
+    cursor: pointer;
+
+}
+ul{
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 32px;
+}
+li svg{
+    margin-left: 40%;
+    margin-right: 40%;
+}
+a:visited{
+    border: none;
+    outline: none;
+}
+.ul:visited{
+    border: none;
+    outline: none;
+}
+.test{
+    color: red;
+    font - weight: bold;
+}
+li{
+    width: 100%;
+    height: 82px;
+    text-align: center;
+}
+li a{
+    width: 100%;
+    height: 100%;
+   
+}
+

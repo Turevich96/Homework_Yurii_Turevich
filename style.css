@@ -1,0 +1,25 @@
+.title{
+    width: 700px;
+    height: 40px;
+}
+.button{
+    background-color: tomato;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.image{
+    width: 100px;
+    height: 148px;
+}
+.film-box{
+    border: 2px solid silver;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 6px;
+    width: 680px;
+  
+    
+}

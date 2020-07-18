@@ -1,0 +1,192 @@
+// Slider
+.slick-slider{
+    width: 100%;
+    
+}
+.slide{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__title{
+        font-size: 80px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.28;
+        letter-spacing: 4px;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+    
+    }
+    &__subtitle{
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: 5.4px;
+        text-align: center;
+        color: #ffffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        margin-top: 75px;
+        
+    }
+}
+.slide1{
+   
+    
+    background-image: linear-gradient(45deg, rgba(85,184,255,0.94) 0%, rgba(126,90,255,0.94) 100%), url(../assets/image/simpl_modern_bg.jpg);   
+   
+}
+
+.slide2{
+    background-image: linear-gradient(45deg, rgba(85,184,255,0.90) 0%, rgba(126,90,255,0.90) 100%), url(../assets/image/slide2.jpg);
+   
+}
+
+.slide3{
+    background-image: linear-gradient(45deg, rgba(85,184,255,0.90) 0%, rgba(126,90,255,0.90) 100%), url(../assets/image/slide3.jpg);
+   
+}
+.slide4{
+    background-image: linear-gradient(45deg, rgba(85,184,255,0.90) 0%, rgba(126,90,255,0.90) 100%), url(../assets/image/slide4.jpg);
+   
+}
+
+// first-screen-content
+.sity-conteyner{
+    font-family: Gotham;
+    overflow: hidden;
+}
+.first-screen{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.first-screen-content{
+    // position: relative;
+    height: 100%;
+}
+.content-center{
+    width: 1170px;
+    margin: 0 auto;
+    // position: absolute;
+    // top: 0px;
+    &__scroll-down{
+        
+        &__box{
+            width: 40px;
+            height: 40px;
+                position: absolute;
+                bottom: 0px;
+            border: solid 1px #ffffff;
+            border-radius: 100%;
+            left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        margin-bottom: 49px;
+        display: flex;
+    justify-content: center;
+        }
+    }
+}
+.header{
+    margin-top: 53px;
+    display: flex;
+    position: absolute;
+    width: 1170px;
+   
+    // 
+    // 
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    &__logo{
+        margin-right: 7.6%;
+    }
+    &__icon{
+        display: flex;
+        right: 0px;
+            position: absolute;
+            align-items: center;
+            height: 100%;
+        &__box{
+            border: 1px solid #ffffff;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            margin-left: 20px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            
+        }
+        &__box:hover{
+            background-color: #ffffff;
+        }
+        &__box:hover .icons{
+            color: rgba(126,90,255,0.94);
+        }
+    }
+    
+}
+.icons{
+    color: #ffffff;
+}
+.nav{
+    display: flex;
+    &__list{
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        &__string{
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.57;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+            display: flex;
+            margin-right: 19%;
+            white-space: nowrap;
+            text-transform: uppercase;
+            cursor: pointer;
+            &__link{
+                display: flex;
+                color: #ffffff;
+                
+            }
+            &__link:hover .point{
+              background-color: #ffffff;
+            }
+        }
+    }
+}
+.string-maggin{
+    
+    margin-right: 27.5%;
+
+}
+.point{
+    width: 9px;
+  height: 9px;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  margin: auto;
+  margin-right: 14px;
+}

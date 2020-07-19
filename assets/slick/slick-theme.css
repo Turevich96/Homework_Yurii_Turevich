@@ -23,7 +23,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 42%;
 
     display: block;
 
@@ -73,6 +73,7 @@
     background-repeat: no-repeat;
     background-position-x: center;
    background-position-y: center;
+   transform: rotate(90deg);
 
     opacity: .75;
     border: 1px solid #fff;
@@ -114,12 +115,16 @@
     right: -25px;
 }
 [dir='rtl'] .slick-next
-{
+{ 
+    
     right: auto;
     left: -25px;
 }
 .slick-next:before
-{
+{  background-image: url(../icons/down.svg);
+    transform: rotate(269deg);
+    right: -83px;
+    position: absolute;
     content: '→';
 }
 [dir='rtl'] .slick-next:before

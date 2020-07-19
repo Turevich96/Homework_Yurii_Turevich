@@ -1,8 +1,12 @@
 // header 
 .section-galerry{
     width: 100vw;
-    height: 1000px;
+    height: 858px;
     background-color: #ffffff;
+}
+.gallery-center{
+    width: 1180px;
+    margin: 0 auto;
 }
 .section-galerry-content{
     &__header{
@@ -25,18 +29,20 @@
             text-align: center;
             color: #2c4058;
             text-transform: uppercase;
-            margin-bottom: 100px;
+            margin-bottom: 103px;
         }
     }
     &__box{
         display: flex;
+        
         &__left{
            
             &__img{
                 margin-right: 5px;
                 margin-top: 5px;
                 width: 585px;
-                height: 428px;
+                height: 438px;
+                margin-left: 5px;
             }
         }
         &__right{
@@ -47,13 +53,14 @@
             &__img{
                 width: 48%;
                 margin: 5px;
+                height: 214px;
                 
             }
 
         }
     }
     &__button-box{
-        margin-top: 60px;
+        margin-top: 57px;
         width: 100%;
         display: flex;
         justify-content: center;

@@ -67,11 +67,17 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 40px;
     line-height: 1;
+    background-image: url(../icons/down.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+   background-position-y: center;
 
     opacity: .75;
-    color: white;
+    border: 1px solid #fff;
+    border-radius: 100%;
+   margin: 20px;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -88,7 +94,15 @@
 }
 .slick-prev:before
 {
+
+    position: absolute;
+    left: -80px;
+     background-image: url(../icons/down.svg);
+     background-repeat: no-repeat;
+     background-position-x: center;
+    background-position-y: center;
     content: '←';
+   
 }
 [dir='rtl'] .slick-prev:before
 {

@@ -106,6 +106,15 @@
     }
    
 }
+.what-we-do-content__rigth__button:hover{
+    color: #ffffff;
+    background-color: #2c4058;; 
+}
+.absolut{
+    position: absolute;
+    
+    
+}
 
 
 .what-we-do-content__rigth{
@@ -146,7 +155,30 @@
         text-align: left;
         color: #4b5562;
         margin-bottom: 43px;
+        
        
+    }
+    
+    .display-none{
+       padding: 0px;
+    }
+    .display-block{
+        display: block;
+    }
+    &__text2{
+        display: none;
+        width: 460px;
+        
+        font-family: OpenSans;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4b5562;
+        margin-bottom: 43px;
     }
    &__button{
          width: 190px;
@@ -163,6 +195,11 @@
   text-align: center;
   color: #2c4058;
   margin-bottom: 53px;
+
+  &__button:hover{
+    color: #ffffff;
+    background-color: #2c4058;; 
+  }
  
    }
    &__location{

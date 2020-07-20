@@ -220,3 +220,55 @@ jQuery(function ($) {
         });
     });
 });
+
+// form 
+let inputName = document.querySelector('.footer-content__form__right__name');
+let inputMail = document.querySelector('.footer-content__form__right__name');
+let button = document.querySelector('.footer-content__form__right__button');
+button.addEventListener('click', getUser);
+let user = [];
+function getUser() {
+    user[0] = inputName.value;
+    user[1] = inputMail.value;
+    console.log(user)
+
+}
+// Text button open 
+let buttonText = document.querySelector('.button2');
+let textDiv = document.querySelector('.text-top');
+let textDivMore = document.querySelector('.what-we-do-content__rigth__text2');
+let leftImg = document.querySelector('.left-im');
+
+
+let count = 1;
+buttonText.addEventListener('click', moreText);
+
+function moreText(count) {
+
+    if ((textDivMore.classList.length) == 1) {
+        textDiv.classList.add('display-none');
+        leftImg.classList.add('absolut');
+
+
+
+        textDivMore.classList.add('display-block');
+        buttonText.innerText = 'back'
+
+
+
+    }
+
+    else if ((textDivMore.classList.length) == 2) {
+
+        textDiv.classList.remove('display-none');
+        textDivMore.classList.remove('display-block');
+        leftImg.classList.remove('absolut');
+        buttonText.innerText = 'more details'
+
+    }
+}
+
+
+
+
+

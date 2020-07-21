@@ -203,7 +203,16 @@ function initMap() {
                 ]
             }
         ]
+
     });
+
+    const place = { lat: 40.674, lng: -73.945 };
+    let marker = new google.maps.Marker({
+        position: place,
+        map: map,
+        icon: './assets/image/marker-icon.png'
+    })
+
 
 }
 
@@ -266,6 +275,61 @@ function moreText(count) {
         buttonText.innerText = 'more details'
 
     }
+}
+// Text button open 
+let buttonTextLeft = document.querySelector('.button_bottom');
+let textDivLeft = document.querySelector('.text4');
+let textDivMoreLeft = document.querySelector('.text3');
+let leftImgLeft = document.querySelector('.left-im');
+
+
+let countLeft = 1;
+buttonTextLeft.addEventListener('click', moreTextLeft);
+
+function moreTextLeft(count) {
+
+    if ((textDivMoreLeft.classList.length) == 2) {
+        textDivLeft.classList.add('display-none');
+        leftImgLeft.classList.add('absolut');
+
+
+
+        textDivMoreLeft.classList.add('display-block');
+        buttonTextLeft.innerText = 'back'
+
+
+
+    }
+
+    else if ((textDivMoreLeft.classList.length) == 3) {
+
+        textDivLeft.classList.remove('display-none');
+        textDivMoreLeft.classList.remove('display-block');
+        leftImgLeft.classList.remove('absolut');
+        buttonTextLeft.innerText = 'more details'
+
+    }
+}
+
+// more gallery
+let galleryMore = document.querySelector('.box2');
+let buttonGallary = document.querySelector('.section-galerry-content__button-box__button');
+
+buttonGallary.addEventListener('click', gallaryMo);
+
+function gallaryMo() {
+    if (galleryMore.classList.length == 2) {
+        galleryMore.classList.add('display-block');
+        buttonGallary.innerText = 'back'
+    }
+    else {
+        // galleryMore.classList.remove('display-block');
+        galleryMore.classList.remove('display-block');
+
+
+        buttonGallary.innerText = 'more details'
+    }
+
 }
 
 

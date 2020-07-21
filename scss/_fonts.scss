@@ -2,14 +2,21 @@
 @font-face {
 	font-family: 'Gotham';
 	src: url('fonts/GothamMedium.eot');
-	src: local('☺'), url('../assets/fonts/GothamMedium.woff') format('woff'), url('../assets/fonts/GothamMedium.ttf') format('truetype'), url('../assets/fonts/GothamMedium.svg') format('svg');
+	src: local('☺'), url('./assets/fonts/GothamMedium.woff') format('woff'), url('./assets/fonts/GothamMedium.ttf') format('truetype'), url('./assets/fonts/GothamMedium.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Gotham';
 	src: url('fonts/GothamBold.eot');
-	src: local('☺'), url('../assets/fonts/GothamBold.woff') format('woff'), url('../assets/fonts/GothamBold.ttf') format('truetype'), url('../assets/fonts/GothamBold.svg') format('svg');
+	src: local('☺'), url('./assets/fonts/GothamBold.woff') format('woff'), url('./assets/fonts/GothamBold.ttf') format('truetype'), url('./assets/fonts/GothamBold.svg') format('svg');
 	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'icomoon';
+	src: url('./assets/fonts/fonts-icons/icomoon.eot');
+	src: local('☺'), url('./assets/fonts/fonts-icons/icomoon.woff') format('woff'), url('./assets/fonts/fonts-icons/icomoon.ttf') format('truetype'), url('./assets/fonts/GothamBold.svg') format('svg');
+	font-weight: normal;
 	font-style: normal;
 }

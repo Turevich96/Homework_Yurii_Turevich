@@ -385,15 +385,22 @@ ul {
 @font-face {
   font-family: "Gotham";
   src: url("fonts/GothamMedium.eot");
-  src: local("☺"), url("../assets/fonts/GothamMedium.woff") format("woff"), url("../assets/fonts/GothamMedium.ttf") format("truetype"), url("../assets/fonts/GothamMedium.svg") format("svg");
+  src: local("☺"), url("./assets/fonts/GothamMedium.woff") format("woff"), url("./assets/fonts/GothamMedium.ttf") format("truetype"), url("./assets/fonts/GothamMedium.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
   src: url("fonts/GothamBold.eot");
-  src: local("☺"), url("../assets/fonts/GothamBold.woff") format("woff"), url("../assets/fonts/GothamBold.ttf") format("truetype"), url("../assets/fonts/GothamBold.svg") format("svg");
+  src: local("☺"), url("./assets/fonts/GothamBold.woff") format("woff"), url("./assets/fonts/GothamBold.ttf") format("truetype"), url("./assets/fonts/GothamBold.svg") format("svg");
   font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("./assets/fonts/fonts-icons/icomoon.eot");
+  src: local("☺"), url("./assets/fonts/fonts-icons/icomoon.woff") format("woff"), url("./assets/fonts/fonts-icons/icomoon.ttf") format("truetype"), url("./assets/fonts/GothamBold.svg") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
@@ -475,19 +482,19 @@ ul {
 }
 
 .slide1 {
-  background-image: linear-gradient(45deg, rgba(85, 184, 255, 0.94) 0%, rgba(126, 90, 255, 0.94) 100%), url(../assets/image/simpl_modern_bg.jpg);
+  background-image: linear-gradient(45deg, rgba(85, 184, 255, 0.94) 0%, rgba(126, 90, 255, 0.94) 100%), url(./assets/image/simpl_modern_bg.jpg);
 }
 
 .slide2 {
-  background-image: linear-gradient(45deg, rgba(85, 184, 255, 0.9) 0%, rgba(126, 90, 255, 0.9) 100%), url(../assets/image/slide2.jpg);
+  background-image: linear-gradient(45deg, rgba(85, 184, 255, 0.9) 0%, rgba(126, 90, 255, 0.9) 100%), url(./assets/image/slide2.jpg);
 }
 
 .slide3 {
-  background-image: linear-gradient(45deg, rgba(85, 184, 255, 0.9) 0%, rgba(126, 90, 255, 0.9) 100%), url(../assets/image/slide3.jpg);
+  background-image: linear-gradient(45deg, rgba(85, 184, 255, 0.9) 0%, rgba(126, 90, 255, 0.9) 100%), url(./assets/image/slide3.jpg);
 }
 
 .slide4 {
-  background-image: linear-gradient(45deg, rgba(85, 184, 255, 0.9) 0%, rgba(126, 90, 255, 0.9) 100%), url(../assets/image/slide4.jpg);
+  background-image: linear-gradient(45deg, rgba(85, 184, 255, 0.9) 0%, rgba(126, 90, 255, 0.9) 100%), url(./assets/image/slide4.jpg);
 }
 
 .sity-conteyner {
@@ -532,6 +539,7 @@ ul {
   display: flex;
   position: absolute;
   width: 1170px;
+  z-index: 100000000;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -593,6 +601,7 @@ ul {
 .nav__list__string__link {
   display: flex;
   color: #ffffff;
+  align-items: flex-start;
 }
 .nav__list__string__link:hover .point {
   background-color: #ffffff;
@@ -607,7 +616,6 @@ ul {
   height: 9px;
   border: 1px solid #ffffff;
   border-radius: 100%;
-  margin: auto;
   margin-right: 14px;
 }
 
@@ -688,7 +696,7 @@ ul {
 }
 .what-we-do-content__left__img {
   margin-top: 70px;
-  margin-bottom: 138px;
+  margin-bottom: 135px;
 }
 .what-we-do-content__left__bottom-shadow {
   right: -257px;
@@ -704,10 +712,14 @@ ul {
 .what-we-do-content__bottom-left {
   margin-top: 123px;
   display: block;
+  padding-top: 7px;
+  outline: none;
 }
 .what-we-do-content__bottom-right {
   margin-top: 0px;
   position: relative;
+  outline: none;
+  padding-top: 7px;
 }
 
 .what-we-do-content__rigth__button:hover {
@@ -758,12 +770,6 @@ ul {
   color: #4b5562;
   margin-bottom: 43px;
 }
-.what-we-do-content__rigth .display-none {
-  padding: 0px;
-}
-.what-we-do-content__rigth .display-block {
-  display: block;
-}
 .what-we-do-content__rigth__text2 {
   display: none;
   width: 460px;
@@ -793,6 +799,8 @@ ul {
   text-align: center;
   color: #2c4058;
   margin-bottom: 53px;
+  padding-top: 7px;
+  outline: none;
 }
 .what-we-do-content__rigth__button__button:hover {
   color: #ffffff;
@@ -811,10 +819,33 @@ ul {
   color: #2c4058;
 }
 
+.what-we-do-content__rigth__text22 {
+  display: none;
+  width: 460px;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4b5562;
+  margin-bottom: 43px;
+}
+
+.display-none {
+  padding: 0px;
+}
+
+.display-block {
+  display: block;
+}
+
 .latest-news {
   width: 100vw;
   height: 1035px;
-  background-image: url(../assets/image/bg2.png), linear-gradient(45deg, rgba(85, 184, 255, 0.9) 0%, rgba(126, 90, 255, 0.9) 100%);
+  background-image: url(./assets/image/bg2.png), linear-gradient(45deg, rgba(85, 184, 255, 0.9) 0%, rgba(126, 90, 255, 0.9) 100%);
   padding-top: 140px;
 }
 
@@ -919,7 +950,6 @@ ul {
 
 .section-galerry {
   width: 100vw;
-  height: 858px;
   background-color: #ffffff;
 }
 
@@ -983,7 +1013,7 @@ ul {
 .footer {
   height: 524px;
   width: 100vw;
-  background-image: url(../assets/image/bg_footer.png), linear-gradient(45deg, rgba(85, 184, 255, 0.9) 0%, rgba(126, 90, 255, 0.9) 100%);
+  background-image: url(./assets/image/bg_footer.png), linear-gradient(45deg, rgba(85, 184, 255, 0.9) 0%, rgba(126, 90, 255, 0.9) 100%);
   display: flex;
   justify-content: center;
 }
@@ -1114,6 +1144,7 @@ ul {
   color: #2c4058;
   position: absolute;
   font-weight: normal;
+  padding-top: 11px;
   right: 60px;
   bottom: 80px;
   text-transform: uppercase;
@@ -1154,4 +1185,20 @@ ul {
 .footer-content__form__right__button:hover {
   color: #ffffff;
   background-color: #2c4058;
+}
+
+.box2 {
+  display: none;
+}
+
+.display-none {
+  padding: 0px;
+}
+
+.display-block {
+  display: flex;
+}
+
+.display-none {
+  padding: 0px;
 }

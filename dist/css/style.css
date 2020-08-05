@@ -1,0 +1,277 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@-webkit-keyframes flip {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    background-image: none;
+  }
+}
+
+@keyframes flip {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    background-image: none;
+  }
+}
+
+@-webkit-keyframes flip2 {
+  0% {
+    z-index: -3;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+
+  30% {
+    z-index: -3;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+
+  100% {
+    z-index: -3;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+
+  100% {
+    z-index: -3;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes flip2 {
+  0% {
+    z-index: -3;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+
+  30% {
+    z-index: -3;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+
+  100% {
+    z-index: -3;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+
+  100% {
+    z-index: -3;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+.poker-tabel {
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: green;
+  padding: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.poker-tabel__kart {
+  width: 107px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: white;
+  margin: 3px;
+  background-image: url(../assets/img/kart.jpg);
+  background-size: cover;
+}
+
+.poker-tabel__kart__index {
+  width: 20%;
+  text-align: center;
+}
+
+.poker-tabel__kart__index__suit {
+  width: 100%;
+}
+
+.poker-tabel__kart div {
+  z-index: -3;
+}
+
+.poker-tabel__kart:hover {
+  -webkit-animation-name: flip;
+          animation-name: flip;
+  -webkit-animation-duration: 900ms;
+          animation-duration: 900ms;
+}
+
+.poker-tabel__kart:hover div {
+  -webkit-animation-name: flip2;
+          animation-name: flip2;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+}
+
+.top {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

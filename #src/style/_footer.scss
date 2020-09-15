@@ -1,0 +1,110 @@
+
+.footer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/img/footer2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 73px;
+    padding-bottom: 77px;
+    font-family: Marcellus;
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+    @include tablet {
+        padding-top: 23px;
+        padding-bottom: 1px;  
+    }
+    @include mobile-w {
+        padding-top: 23px;
+        padding-bottom: 1px;  
+    }
+    @include mobile {
+        padding-top: 23px;
+        padding-bottom: 1px;  
+    }
+    &__social{
+        width: 230px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 27px;
+        color: $footer-silver;
+    }
+    &__social a{
+        color: $footer-silver;
+    }
+    .ico:hover{
+        cursor: pointer;
+        color: $red;
+    }
+
+    &__logo{
+        margin-bottom: 31px;
+        margin-top: 31px;
+    }
+    &__form{
+        position: relative;  
+        margin-bottom: 61px;
+        @include mobile{
+            width: 80%;
+        }
+        &__input{
+            width: 355px;
+            height: 46px;
+            border-radius: 23px;
+            background-color: #ffffff;
+            color: $footer-silver;
+            border: none;
+            outline: none;
+            @include mobile{
+                width: 100%;
+            }
+        }
+        &__input::placeholder{
+            @include footer-subtitle;
+            text-align: left;
+            padding-left: 30px;
+        }
+        &__btn{
+            width: 48px;
+            height: 100%;
+            border-radius: 23px;
+            background-color: $red;
+            position: absolute;
+            padding: 0px;
+            margin: 0px;
+            border: none;
+            top: 0px;
+            right: -11px;
+        }
+        &__btn:hover{
+            cursor: pointer;
+        }
+    }
+    &__title{
+        margin-top: 13px;
+        margin-bottom: 9px;
+        font-size: 24px;
+        text-align: center;
+        color: $black-text;
+    }
+    &__subtitle{
+        
+    @include footer-subtitle;
+        @include mobile{
+            width: 90%;
+            font-size: 12px
+        }
+    }
+}
+.svg{
+    width: 15px;
+    fill: #ffffff;
+}

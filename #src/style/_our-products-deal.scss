@@ -1,0 +1,180 @@
+.our-products-deal{
+    background-image: url(../assets/img/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    padding-bottom: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content{
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex; 
+        flex-wrap: wrap;
+        max-width: 1920px;
+
+        @include mobile{
+         width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        }
+        &__top{
+            width: 100%;
+            &__subtitle{
+                @include mobile-w{
+                    margin-top: 40px;
+                }
+                @include mobile{
+                    margin-top: 40px;
+                }
+            }
+        }
+        &__left{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            @include mobile{
+                width: 90%;
+            }
+            @include laptop{
+                margin-left: 4%;
+            }
+            &__bottom{
+                display: flex;
+                margin-top: 37px;
+                @include tablet{
+                    width: 100%;
+                }
+                @include mobile-w{
+                    width: 100%;
+                }
+                @include mobile{
+                    width: 100%;
+                }
+            }
+            &__img{
+                @include tablet{
+                    width: 100%;
+                }
+                @include mobile-w{
+                    width: 100%;
+                }
+                @include mobile{
+                    width: 100%;
+                }
+            }
+        }
+        &__right{
+            width: 55%;
+            padding-left: 155px;
+            @include mobile-w{
+                padding-left: 25px;  
+            }
+            @include mobile{
+                padding-left: 15px;  
+                padding-right: 15px;
+                width: 100%;
+            }
+            @include laptop{
+                width: 52%;
+                padding-left: 105px;
+            }
+            &__title{
+                font-family: Marcellus;
+                font-size: 24px;
+                line-height: 1.75;
+                letter-spacing: 1.2px;
+                color:$black-text;
+                margin-bottom: 13px;
+            }
+            &__text{
+            width: 460px;
+            height: 106px;
+            @include silver-text;
+            line-height: 1.86;
+            text-align: left;
+            color: #595959;
+
+            @include tablet{
+                width: 100%;
+                margin-bottom: 78px;
+            }
+            @include mobile-w{
+                width: 100%;
+                margin-bottom: 78px;
+            }
+            @include mobile{
+                width: 100%;
+                margin-bottom: 78px;
+            }
+            @include laptop{
+                width: 100%;
+                margin-bottom: 78px;
+            }
+            }
+            &__prise{
+                margin-bottom: 30px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.time-box{
+    width: 85px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-bottom: 45px;
+    @include tablet{
+        margin-left: 20px;
+    }
+    @include mobile-w{
+        margin-left: 20px;
+    }
+    @include mobile{
+        margin-left: 5px;
+        margin-right: 5px;
+    margin-bottom: 10px;
+    }
+    &__time{
+        text-align: center;
+        font-family: Marcellus;
+        font-size: 36px;
+        color: #c02323;
+      }
+    &__title{
+        text-align: center;
+        @include silver-text;
+        line-height: 2.14;
+        letter-spacing: normal;
+      }
+    
+    &__borderTopL{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    &__borderTopR{
+        position: absolute;
+        top: 0px;
+        right:0px;
+    }
+    &__borderDownL{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    &__borderDownR{
+        position: absolute;
+        bottom: 0px;
+        right:0px;
+    }
+}

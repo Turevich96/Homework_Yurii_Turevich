@@ -1,0 +1,100 @@
+.slider{
+    width: 100vw;
+    max-width: 1920px;
+    overflow: hidden;
+    font-weight: normal;
+    font-stretch: normal;
+     font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+
+    @include mobile{
+        height: 80vh;
+        min-height: 440px;
+    }
+    @include mobile-w{
+        height: 85vh;
+        min-height: 440px;
+    }
+    
+    &__slide{
+        background-image: url(../assets/img/slide1.jpg);
+        height:890px ;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-left: 19.3%;
+        padding-right: 5%;
+        padding-top: 290px;
+    @include tablet{
+        padding-left: 10%;   
+    }
+    @include mobile-w{
+        padding-left: 10%; 
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 180px;
+    }
+    @include mobile{
+        padding-left: 10%; 
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 200px;
+    }
+
+        &__subtitle{
+            font-family: RougeScript;
+            font-size: 35.5px;
+            text-align: left;
+            color: #ffffff;
+            padding-left: 8px;
+            @include mobile-w{
+                font-size: 20px;   
+            }
+            @include mobile{
+                font-size: 20px;   
+            }
+        }
+        &__title{
+            font-family: Marcellus;
+            font-size: 72px;
+            text-align: left;
+            color: #ffffff;
+            margin-top: 3px;
+            @include mobile-w{
+                font-size: 42px;  
+                margin-bottom: 30px;  
+            }
+            @include mobile{
+                font-size: 31px; 
+                margin-top: 8px;
+                margin-bottom: 25px;  
+            }
+        }
+        &__text{
+            font-family: LibreBaskerville;
+            font-size: 18px;
+            line-height: 1.67;
+            text-align: left;
+            color: #ffffff;
+            width: 576px;
+            height: 51px;
+            margin-top: 15px;
+            padding-left: 3px;
+            @include mobile-w{
+                font-size: 15px;
+                width: 100%;   
+            }
+            @include mobile{
+                font-size: 12px;
+                width: 100%;   
+            }
+        }
+    }
+}
+.slide2{
+    background-image: url(../assets/img/slide2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

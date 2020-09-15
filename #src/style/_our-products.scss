@@ -1,0 +1,188 @@
+
+.our-products{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 23px;
+    @include mobile{
+        padding-bottom: 0px;   
+    }
+    &__content{
+      padding-top: 0px;
+      margin-left: 5%;
+      margin-right: 5%;
+      display: flex; 
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      max-width: 1920px;
+
+      &__top{
+          width: 100%;
+          margin-bottom: 30px;
+          &__img{
+              margin-top: 0px;
+          }
+      }
+      &__btn-box{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 77px;
+          margin-bottom: 80px;
+      }
+    }
+}
+.btn{
+  width: 150px;
+  height: 46px;
+  border-radius: 2px;
+  border: solid 1px $red;
+  background-color: #ffffff;
+  color: $red;
+  text-transform: uppercase;
+  font-family: Marcellus;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:hover{
+   cursor: pointer;
+   background-color:$red;
+   color:#ffffff ;
+}
+.vine-box{
+    width: 23%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    font-family: Marcellus;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    @include tablet{
+        width: 17%;  
+    }
+    @include mobile-w{
+        width: 17%;  
+    }
+    @include mobile{
+        width: 40%;
+        margin-top: 20px;  
+    }
+    @include laptop{
+        width: 22%; 
+    }
+    &__img{
+        margin: 0 auto;
+        display: flex;
+        @include mobile{
+            width: 64%;
+        }
+        @include mobile-w{
+            width: 74%;
+        }
+    }
+    &__name{
+        font-size: 20px;
+        line-height: 1.7;
+        letter-spacing: normal;
+        text-align: center;
+        color: #191919;
+        margin-bottom: 13px;
+        margin-top: 25px;
+        @include mobile{
+            font-size: 12px;
+        }
+        @include mobile-w{
+            font-size: 12px;
+        }
+    }
+    &__prise{
+       
+        text-align: center;
+    }
+}
+.vine-box:hover{
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+.subtitle{
+    text-align: center;
+    font-family: RougeScript;
+    font-size: 29.5px;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-top: 93px;
+    color: $red;
+    @include mobile{
+        margin-top: 33px;
+    }
+    @include mobile-w{
+        margin-top: 33px;
+    }
+  }
+  .title{
+    text-align: center;
+    font-family: Marcellus;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: $black-text;
+    margin-top: -3px;
+    @include mobile{
+        font-size: 19px;
+    }
+    @include mobile-w{
+        font-size: 19px;
+    }
+  }
+  .img{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 16px;
+    @include mobile{
+        margin-bottom: 25px;
+    margin-top: 9px;
+    }
+    @include mobile-w{
+        margin-bottom: 30px;
+        margin-top: 9px;
+    }
+  }
+  .prise{
+    font-family: LibreBaskerville;
+    font-size: 14px;
+    color: #c02323;
+}
+.vine-box-more1,
+.vine-box-more2,
+.vine-box-more3,
+.vine-box-more4,
+.vine-box-more5,
+.vine-box-more6{
+   display: none;
+}
+.display-flex{
+    display: flex;
+    width: 23%;
+    margin-top: 25px;
+    flex-direction: column;
+}
+.display-none{
+    display: none; 
+}

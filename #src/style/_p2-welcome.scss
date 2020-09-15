@@ -1,0 +1,149 @@
+.welcome{
+    width: 100vw;
+    &__header{
+    height: 80px;
+    background-color: #f2f4f5;
+    width: 100%;
+    margin-bottom: 100px;
+  @include tablet{
+    margin-bottom: 70px;   
+  }
+  @include mobile-w{
+    margin-bottom: 25px;   
+  }
+  @include mobile{
+    margin-bottom: 25px;   
+  }
+    }
+    &__content{
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-wrap: wrap;
+        padding-bottom: 90px;
+        max-width: 1920px;
+        display: flex;
+    justify-content: center;
+    position: relative;
+    @include tablet {
+        flex-direction: column-reverse;
+    }
+    @include mobile-w {
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
+    @include mobile {
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
+&__left{
+    width: 50%;
+    @include center;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include tablet {
+        width: 100%;
+    }
+    @include mobile-w {
+        width: 100%;
+    }
+    @include mobile {
+        width: 100%;
+    }
+    &__img{
+        width: 100%;
+    }
+}
+&__right{
+    width: 50%;
+    @include tablet {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    @include mobile-w {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    @include mobile {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    &__title{
+        font-family: Marcellus;
+        font-size: 36px;
+        color: #191919;
+        margin-bottom: 30px;
+    }
+    &__text{
+        width: 682px;
+        @include silver-text;
+        line-height: 2;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+    &__header-title{
+        font-family: Marcellus;
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        text-align: right;
+        color: #191919;
+        position: absolute;
+        right: 0px;
+        top: -155px;
+    @include tablet {
+        top: -125px;
+    }
+    @include mobile-w {
+        top: -80px;
+    }
+    @include mobile {
+        top: -80px;
+    }
+    }
+    }
+}
+.heder2{
+height: 80px;
+background-color: #f2f4f5;
+width: 100%;
+margin-bottom: 100px;
+@include tablet{
+margin-bottom: 70px;   
+}
+@include mobile-w{
+margin-bottom: 25px;   
+}
+@include mobile{
+margin-bottom: 25px;   
+}
+}
+
+.header-title2{
+    font-family: Marcellus;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-align: right;
+    color: #191919;
+    position: absolute;
+    right: 0px;
+    top: -155px;
+@include tablet {
+    top: -125px;
+}
+@include mobile-w {
+    top: -80px;
+}
+@include mobile {
+    top: -80px;
+}
+}

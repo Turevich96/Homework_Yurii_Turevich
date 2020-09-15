@@ -1,0 +1,151 @@
+.contact{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__content{
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 2px;
+        max-width: 1920px;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        position: relative;   
+            &__map {
+                width: 80%;
+                height: 50vh;
+            }
+    }
+}
+.black-text{
+    font-family: LibreBaskerville;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: $black-text;
+    margin-bottom: 35px;
+    margin-top: 5px;
+    width: 100%;
+    @include mobile-w{
+        width: auto;
+        font-size: 14px;
+    }
+    @include mobile{
+        width: auto;
+        font-size: 12px;
+    }
+}
+.silver-title{
+    font-family: Marcellus;
+    font-size: 18px;
+    font-weight: normal;
+    color: $silver-text;
+    width: 100%;
+    @include mobile-w{
+        width: auto;
+    }
+    @include mobile{
+        width: auto;
+    }
+}
+.form{
+    width: 100vw;
+    @include center;
+    flex-wrap: wrap;
+
+    &__content{
+        margin-left: 5%;
+        margin-right: 5%;
+        @include flex;
+        flex-wrap: wrap;
+        padding-bottom: 2px;
+        max-width: 1920px;
+        width: 100%;
+        position: relative; 
+    &__top{
+        width: 100%;
+    }
+    &__form{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+        @include mobile-w{
+            padding-bottom: 30px;
+        }
+        @include mobile{
+            padding-bottom: 30px;
+        }
+        &__left{
+            width: 45%;
+            padding-right: 10px;
+            padding-left: 10px;
+            @include mobile-w{
+                width: 100%; 
+                @include center;
+                flex-direction: column;
+            }
+            @include mobile{
+                width: 100%; 
+                @include center;
+                flex-direction: column;
+            }
+        }
+        &__right{
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            @include mobile-w{
+                width: 90%;
+                margin: auto;
+            }
+            @include mobile{
+                width: 90%; 
+                margin: auto;
+            }
+        }
+    }  
+    }
+}
+.input{
+    height: 50px;
+    border-radius: 2px;
+    border: solid 1px #ebebeb;
+    background-color: #ffffff;
+    margin-bottom: 30px;    
+    @include silver-text;
+    line-height: 2.93;
+    padding-left: 20px;
+}
+.input:focus{
+    border: solid 1px $red; 
+    outline: none;          
+}
+.input::placeholder{
+    @include silver-text;
+    line-height: 2.93;
+    padding-left: 20px;
+}
+.input-mes{
+    height: 100px;
+    @include silver-text;    
+    line-height: 2.93;
+    padding-left: 20px;
+}
+.btn2{
+
+  @include mobile-w{
+                margin: auto;
+            }
+            @include mobile{
+                margin: auto;
+            }
+}

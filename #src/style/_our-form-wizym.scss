@@ -1,0 +1,195 @@
+.our-form-wizym{
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  padding-top: 74px;
+  background-color: #f9fafa;
+  padding-bottom: 85px;
+  @include mobile{
+    padding-bottom: 55px;   
+  }
+  &__content{
+      margin-left: 4.5%;
+      margin-right: 5%;
+      display: flex; 
+      max-width: 1920px;
+      @include mobile-w{
+        flex-direction: column;
+      }
+      @include mobile{
+        flex-direction: column;
+      }
+      &__left{
+          width: 650px;
+          max-width: 650px;
+          padding-right: 40px;
+          @include tablet {
+              width: 50%;
+              height: 50%;
+              margin-top: 143px;
+          }
+          @include mobile-w {
+            width: 80%;
+            height: 50%;
+            margin: auto;
+            margin-top: 3px;
+            padding-right: 0px;
+           
+        }
+        @include mobile {
+            width: 80%;
+            height: 50%;
+            margin: auto;
+            margin-top: 3px;
+            padding-right: 0px;
+        }
+      }
+      &__right{
+          width: 78%;
+          @include mobile-w{
+            width: 100%;   
+          }
+          @include mobile{
+            width: 100%;   
+          }
+          &__subtitle{
+            font-family: RougeScript;
+            font-size: 29.5px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #c02323;
+            margin-top: 42px;
+            @include mobile-w{
+                text-align: center;  
+              }
+              @include mobile{
+                text-align: center;  
+              }
+          }
+          &__title{
+            font-family: Marcellus;
+            font-size: 36px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.22;
+            letter-spacing: normal;
+            text-align: left;
+            color: #191919;
+            margin-top: 4px;
+            @include mobile-w{
+                text-align: center;  
+              }
+              @include mobile{
+                text-align: center;  
+              }
+          }
+          &__text{
+            
+            max-width: 458px;
+            height: 69px;
+            @include silver-text;
+            line-height: 1.86;
+            margin-top: 14px;
+            margin-bottom: 35px;
+            @include tablet{
+                width: 100%;
+                margin-bottom: 78px;
+            }
+            @include mobile-w{
+                margin: auto;
+                width: 100%;
+                margin-bottom: 28px;
+                text-align: center;
+                margin-top: 20px;
+            }
+            @include mobile{
+                margin: auto;
+                width: 100%;
+                margin-bottom: 58px;
+                text-align: center;
+                margin-top: 20px;
+            }
+            
+            @include laptop{
+                width: 100%;
+                margin-bottom: 78px;
+            }
+          }
+          &__open{
+              @include mobile-w{
+                text-align: center;
+              }
+              @include mobile{
+                text-align: center;
+              }
+          }
+          .title{
+            @include silver-text;
+            line-height: 2.14;
+            margin-bottom: 0px;
+            margin-top: 10px;
+            @include mobile-w{
+                text-align: center;
+            }
+            @include mobile{
+                text-align: center;
+            }
+          }
+          .hotline-title{
+              margin-bottom: 10px;
+              @include mobile-w{
+                margin-bottom: 3px;
+                margin-top: 3px;  
+                text-align: center;
+              }
+              @include mobile{
+                margin-bottom: 3px;
+                margin-top: 3px;  
+                text-align: center;
+              }
+          }
+          .hotline{
+              margin-bottom: 22px;
+              @include mobile-w{
+                margin-bottom: 10px; 
+                
+                text-align: center;
+              }
+              @include mobile{
+                margin-bottom: 10px; 
+                
+                text-align: center;
+              }
+          }
+          .open-title{
+              margin-bottom: 8px;
+              @include mobile-w{
+                margin-bottom: 5px;  
+                text-align: center;
+              }
+              @include mobile{
+                margin-bottom: 5px;  
+                text-align: center;
+              }
+          }
+          &__address{
+            @include silver-text;
+            line-height: 2.14;
+            letter-spacing: normal;
+            color: #191919;
+            @include mobile-w{
+                text-align: center;
+            }
+            @include mobile{
+                text-align: center;
+            }
+          }
+        }
+      }
+  }
